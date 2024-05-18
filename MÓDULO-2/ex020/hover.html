@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Esta regra CSS seleciona parágrafos que são filhos diretos de elementos <div> e os oculta */
+        div > p {  /*Siginifica que esta modificando um parágrafo que é filho de uma div("que esta dentro da div")*/
+            display: none;  /*Esconde o texto que esta dentro da div*/
+        }
+
+/* Quando um elemento <div> é passado por cima (hover), os parágrafos filhos diretos dele serão exibidos como um bloco com cor de texto branca, fundo vermelho e largura de 300px */
+        div:hover > p {
+            display: block; /*Mostra o texto que esta dentro da div*/
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+/* Quando um elemento <div> é passado por cima (hover), a cor de texto do próprio <div> muda para vermelho */
+        div:hover {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do xemplo</p>
+</body>
+</html>

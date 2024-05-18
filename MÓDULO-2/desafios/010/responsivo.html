@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            
+            min-width: 280px; /*Define a largura mínima de 280px para evitar que o conteúdo fique muito estreito em telas pequenas.*/
+            max-width: 800px; /*Define a largura máxima de 800px, para evitar que o conteúdo fique muito largo em telas grandes*/
+            margin:auto; /*Centraliza o contêiner main horizontalmente na página*/
+        }
+
+        img {
+            width: 100%; /*Define que as imagens dentro do contêiner main ocuparão 100% da largura do contêiner pai, mantendo a responsividade.*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam hic. Consectetur recusandae dolor dicta, unde quas exercitationem nam ratione nihil ducimus id necessitatibus distinctio asperiores velit ipsam laudantium. Sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus necessitatibus, mollitia facere accusamus veritatis commodi hic quasi unde. Molestiae laudantium nam unde adipisci, possimus enim! Ullam eveniet quod incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sed quam fuga animi ea similique dolores voluptates, velit omnis vel? Officia deserunt doloribus eaque incidunt libero sequi veniam. Quos, sint.</p>
+        <picture> 
+            <source media="(max-width:600px )" srcset="imagens/irina-blok-pq.jpg"> <!--Carrega a imagem menor quando o tamanho da tela for 600px (responsivo)-->
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok"> <!--Carrega a imagem normal(maior) quando a tela tiver tamanho superior a 600px (responsivo)-->
+        <picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, magnam hic. Consectetur recusandae dolor dicta, unde quas exercitationem nam ratione nihil ducimus id necessitatibus distinctio asperiores velit ipsam laudantium. Sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint natus necessitatibus, mollitia facere accusamus veritatis commodi hic quasi unde. Molestiae laudantium nam unde adipisci, possimus enim! Ullam eveniet quod incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sed quam fuga animi ea similique dolores voluptates, velit omnis vel? Officia deserunt doloribus eaque incidunt libero sequi veniam. Quos, sint.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div:hover {
+            color: yellow;
+        }
+
+        div:hover > p {
+            display: block;
+            color: black;
+            font-weight: bolder;
+            background-color:red;
+            width: 170px;
+            padding: 20px;
+            
+        }
+
+        div > p {
+            display: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do teste!</p>
+</body>
+</html>

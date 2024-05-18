@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /*Configurações globais das CSS*/
+            height: 100%; /*Usando o seletor global do CSS (*), Aumentamos o gradiente para pagina toda quando colocar top ou bottom. Senao ele fica zebrado. As opções left e right não precisam */
+        }
+
+        body {
+            background-image: linear-gradient(to right, #505BC9, #A43AAB , #EF4C5D , #FF583F , #FF8F48);
+            background-attachment: fixed; /*Fundo fixo para não escrolar*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

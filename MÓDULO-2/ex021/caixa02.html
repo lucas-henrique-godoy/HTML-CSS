@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            box-shadow: 2px 1px 14px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);   /*Sombra em volta do menu(NAV). 1°-Deslocamento horizontal, 2°-Deslocamento vertical, 3°-Um Raio de desfoque, 4°- Um raio de expansão, 5°-Cor.*/
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline; /*Quando passar o mouse em cima ele fica sublinhado*/
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px; /*Bordas arredondadas*/
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {  /*Aside é filho do article*/
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>  <!--HEADER -> CABEÇALHO-->
+        <h1>Meu Site</h1>
+        <nav>       <!--NAV -> NAVEGAÇÃO/MENU-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+        <main>      <!--MAIN -> CONTEÚDO PRINCIPAL-->
+            <section id="assuntos"> <!--SECTION -> ÁREA DE SESSÕES DO SITE-->
+                <P>Esportes Polítia Tecnologia</P>
+
+            </section>
+            <section id="noticias">
+                <article> <!--ARTICLE -> é um elemento HTML5 usado para representar conteúdo independente e autônomo, como artigos, postagens de blog, etc.-->
+                    <h2>Notícia sobre o Brasil</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique omnis ab porro, eligendi culpa non ipsum vel vero temporibus. Explicabo facilis deserunt soluta corrupti laudantium, suscipit provident alias veniam nobis?
+                    Et deserunt error odio amet labore praesentium ipsam tempora numquam, architecto quam vitae quae itaque iure sequi odit? Quia rem expedita nisi. Quas, magnam laudantium. Sunt, nobis? Hic, modi at?</p>
+                    <aside> <!--ASIDE ->  é um elemento HTML5 usado para conteúdo relacionado ou não essencial para o conteúdo principal da página, como barras laterais, anúncios, etc.-->
+                        <p>Artigo escrito por Lucas H. Godoy</p>
+                    </aside>
+
+                </article>                
+                <article>
+
+                </article>
+
+            </section>
+        </main>
+        <footer> <!--FOOTER -> é um elemento HTML5 usado para representar informações de rodapé em um documento, como informações de direitos autorais, links para páginas relacionadas, etc.-->
+            <p>Desenvolvido pelo CursoemVídeo</p>
+        </footer>
+        <div id="bola">
+                </p>
+        </div>
+
+</body>
+</html>

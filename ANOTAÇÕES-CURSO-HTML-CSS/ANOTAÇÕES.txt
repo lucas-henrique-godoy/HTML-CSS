@@ -1,0 +1,370 @@
+- Sites para procurar imagens que posso usar nos meus projetos sem dar direito autoral: https://unsplash.com/pt-br,  https://www.pexels.com/pt-br/.
+_______________________________________________________________________________________________________________________________________________________________________
+- Site para baixar programa de manipulação de fotos: https://www.gimp.org/.
+_______________________________________________________________________________________________________________________________________________________________________
+- Site para  baixar programa de converter vídeos:  https://handbrake.fr/rotation.php?file=HandBrake-1.7.3-x86_64-Win_GUI.exe.
+_______________________________________________________________________________________________________________________________________________________________________
+- Site para pegar videos(opção além do youtube): https://vimeo.com
+_______________________________________________________________________________________________________________________________________________________________________
+- Site para criar paleta de cores para desenvolvimento de páginas: https://color.adobe.com/pt/
+_______________________________________________________________________________________________________________________________________________________________________
+- Site para criar paleta de cores para desenvolvimento de páginas: https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF
+_______________________________________________________________________________________________________________________________________________________________________
+- Site para criar paleta de cores para desenvolvimento de páginas:https://coolors.co/dceed1-aac0aa-736372-a18276-7a918d
+_______________________________________________________________________________________________________________________________________________________________________
+- Site para baixar fontes: https://www.dafont.com/pt/
+_______________________________________________________________________________________________________________________________________________________________________
+- Site para encontrar fontes: https://fonts.google.com/
+_______________________________________________________________________________________________________________________________________________________________________
+- Sites para identificar fontes em imagens: https://www.whatfontis.com/  |  https://www.fontsquirrel.com/ | https://www.myfonts.com/
+_______________________________________________________________________________________________________________________________________________________________________
+- Baixar a extensão colorzilla: Ela ajuda a descobrir as cores de sites e mostra o código da cor.
+_______________________________________________________________________________________________________________________________________________________________________
+- Para baixar extensões do google entrar no site: https://chromewebstore.google.com/?hl=pt-BR
+_______________________________________________________________________________________________________________________________________________________________________
+- Para descobrir a fonte usadas em qualquer site usar a extensão do google: Fonts ninja.
+_______________________________________________________________________________________________________________________________________________________________________
+-Site para planejar o layout de sites: https://mockflow.com/
+_______________________________________________________________________________________________________________________________________________________________________
+-Extensão para testar tamanhos de tela de sites para responsividade: Window Resizer.
+_______________________________________________________________________________________________________________________________________________________________________
+-Site paa pegar emojis: https://emojipedia.org/
+_______________________________________________________________________________________________________________________________________________________________________
+
+FORMATOS DE IMAGEM: Em sites usar imagens de tamanho máximo 1500 pixels. Normalmente uma imagem num site tem tamanho de 600 pixels.
+JPEG e PNG são dois formatos de imagem populares com diferenças essenciais:
+
+JPEG:
+
+Utiliza compressão com perda, o que reduz a qualidade para diminuir o tamanho do arquivo.
+É adequado para fotos com muitas cores e variações tonais.
+Não suporta transparência.
+PNG:
+
+Utiliza compressão sem perda, mantendo a qualidade original.
+É ideal para gráficos, logotipos e ilustrações com detalhes nítidos.
+Suporta transparência.
+Resumindo, escolha JPEG para fotos e PNG para imagens com detalhes nítidos e transparência.
+
+- Site para procurar icones: https://www.iconarchive.com/
+- Site para criar icones Favicon: https://www.iconarchive.com/
+
+-ATALHO DE COMANDO VS CODE PARA COLOCAR TAG EM FRASE JA PRONTA: Clicar ctrl + shift + p, depois digita abb e clica em WRAP WITH ABBREVIATION e depois coloca a tag desejada.
+
+- É possível colocar mais de um arquivo de css externo no site. É só adicionar outro link. Ou seja, ira adicionar as alterações ambos. Ex:
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Estilos Locais / Internos</title>
+   <link rel="stylesheet" href="style.css"> 	-> LINK 1.
+   <link rel="stylesheet" href="extra.css">  	-> LINK 2.
+</head>
+
+- No mesmo arquivo eu posso utilizar CSS EXTERNO, CSS INTERNO E CSS INLINE. Um exemplo é o exercício do Módulo 1 - Arquivo ex0015. 
+
+_______________________________________________________________________________________________________________________________________________________________________
+							
+								CORES PARA SITE:
+
+ Uma dica é pegar uma cor como base e olhar o circulo cromatico. Pegar a cor que contrasta(trasse uma reta na mesma direção contrária a da cor escolhida do circulo cromatico, essa é a cor de contraste. E pegue as 2 cores ao redor da cor que voce escolheu.)
+Escolher uma paleta de cores eficaz para o desenvolvimento de um site é crucial para transmitir a mensagem certa, criar uma identidade visual coesa e garantir uma experiência agradável para os usuários. Aqui estão algumas dicas para ajudar na seleção de paletas de cores:
+
+Conheça a Psicologia das Cores:
+Entenda o significado e o impacto emocional das cores. Por exemplo, o azul pode transmitir tranquilidade e confiança, o verde está associado à natureza e ao frescor, enquanto o vermelho pode evocar paixão ou urgência. Use isso para alinhar as cores com a mensagem e a personalidade da marca.
+Considere o Contexto e o Público-Alvo:
+Pense no contexto em que o site será utilizado e no público-alvo. As preferências de cores podem variar entre diferentes culturas, faixas etárias e setores de mercado. Além disso, leve em conta o propósito do site e a emoção que deseja evocar nos usuários.
+Use Ferramentas de Design:
+Existem várias ferramentas online que podem ajudar na seleção de paletas de cores, como Adobe Color, Coolors, Paletton e Color Hunt. Essas ferramentas permitem explorar combinações de cores, criar gradientes e visualizar as cores em diferentes contextos.
+Entenda a Teoria das Cores:
+Familiarize-se com conceitos básicos de teoria das cores, como cores complementares, análogas, triádicas e monocromáticas. Isso pode ajudar na criação de harmonia e equilíbrio na paleta de cores do seu site.
+Use Contraste Adequado:
+Garanta que haja contraste suficiente entre o texto e o fundo para garantir legibilidade. Cores muito semelhantes podem tornar o texto difícil de ler, especialmente para pessoas com deficiências visuais.
+Comece com Cores Neutras:
+Comece escolhendo uma ou duas cores neutras (como branco, cinza ou preto) como base e adicione cores mais vibrantes como acentos. Isso pode ajudar a criar uma base sólida e flexível para a paleta de cores.
+Teste e Itere:
+Experimente diferentes combinações de cores e solicite feedback de colegas, clientes ou amigos. Teste a paleta de cores em diferentes dispositivos e monitores para garantir que as cores pareçam consistentes e atraentes em todas as plataformas.
+Inspire-se na Natureza e no Design:
+A natureza e o mundo ao seu redor oferecem uma infinidade de belas combinações de cores. Além disso, observe o design de outros sites, obras de arte e materiais impressos para obter inspiração e ideias para sua própria paleta de cores.
+Lembre-se de que não existe uma fórmula única para escolher uma paleta de cores perfeita, e o processo pode exigir alguma experimentação e iteração. O mais importante é criar uma paleta de cores que se alinhe à identidade e aos objetivos do seu site, ao mesmo tempo em que oferece uma experiência visual agradável e funcional para os usuários.
+Ao escolher uma paleta de cores para o desenvolvimento de um site, você pode combinar os conceitos de cores análogas e cores análogas relacionais para criar uma aparência visualmente atraente e coesa.
+
+Escolha uma cor primária: Comece selecionando uma cor primária que represente a identidade ou o tema do seu site. Esta será a cor central em sua paleta.
+Identifique as cores análogas: Utilize o círculo cromático para encontrar cores que estejam próximas à sua cor primária. Essas cores complementarão a cor principal e criarão uma paleta harmoniosa. Por exemplo, se sua cor primária for um azul claro, as cores análogas poderiam ser um azul mais escuro e um verde-água.
+Adicione cores análogas relacionais: Para adicionar mais profundidade e interesse à sua paleta, escolha cores análogas relacionais. Isso pode ser feito combinando uma cor análoga com a cor complementar da sua cor primária. Por exemplo, se você escolheu um azul claro como cor primária, pode combinar um azul mais escuro com um tom de laranja como sua cor análoga relacionada.
+Teste e ajuste: Experimente diferentes combinações de cores para ver como elas se complementam e como aparecem em diferentes elementos do seu site, como fundos, textos, botões e elementos de destaque. Faça ajustes conforme necessário para garantir uma aparência equilibrada e legível.
+Considere a psicologia das cores: Além da harmonia visual, leve em consideração o significado emocional e psicológico das cores ao selecionar sua paleta. Por exemplo, tons de azul podem transmitir calma e confiança, enquanto tons de laranja podem evocar energia e entusiasmo.
+Ao seguir esses passos e integrar os conceitos de cores análogas e cores análogas relacionais, você pode criar uma paleta de cores eficaz e visualmente atraente para o desenvolvimento do seu site.
+
+- Configuração global do CSS: 
+Usar: 
+*{
+
+}
+
+-Nomenclaturas CSS: weight (Peso), width(largura), height(altura).
+_______________________________________________________________________________________________________________________________________________________________________
+
+PSEUDOCLASSES: Em CSS (Cascading Style Sheets), uma pseudoclasse é um seletor que especifica um estado especial de um elemento HTML. Enquanto os seletores comuns no CSS se aplicam aos elementos com base em seus tipos, classes ou IDs, as pseudoclasses se aplicam com base em interações do usuário ou estados específicos do elemento.
+
+Por exemplo, a pseudoclasse :hover é ativada quando o cursor do mouse passa sobre um elemento. Isso permite que você altere a aparência desse elemento apenas quando ele está sendo "hovered" (sobrevoado) pelo cursor.
+
+Outro exemplo comum é a pseudoclasse :focus, que se aplica a elementos que atualmente têm o foco, como campos de formulário que estão sendo preenchidos pelo usuário.
+
+As pseudoclasses oferecem uma maneira poderosa de estilizar elementos com base em interações do usuário, permitindo uma experiência visual mais dinâmica e interativa em páginas da web.
+
+PSEUDOCLASSES E PSEUDOELEMENTOS:
+Pseudo-classes e pseudo-elementos são usados em diferentes situações, dependendo do que você deseja alcançar em sua estilização CSS.
+
+Pseudo-classes são usadas para selecionar e estilizar elementos com base em estados específicos ou interações do usuário. Aqui estão alguns exemplos comuns de pseudo-classes e seus usos:
+
+:hover: Estiliza um elemento quando o mouse está sobre ele.
+:active: Estiliza um elemento quando ele está sendo clicado.
+:focus: Estiliza um elemento quando ele recebe foco, geralmente usado em campos de entrada de formulário.
+:nth-child(): Estiliza elementos com base em sua posição em relação a seus pais.
+Pseudo-elementos, por outro lado, são usados para adicionar estilos a partes específicas de um elemento, como o conteúdo antes ou depois do elemento real. Eles são representados pelos seletores ::before e ::after, mas também incluem outros como ::first-line e ::first-letter. Aqui estão alguns exemplos de usos comuns de pseudo-elementos:
+
+::before e ::after: Adiciona conteúdo antes ou depois do conteúdo de um elemento.
+::first-line: Estiliza a primeira linha de texto dentro de um elemento.
+::first-letter: Estiliza a primeira letra de um elemento de texto.
+Em resumo, use pseudo-classes quando quiser estilizar elementos com base em estados ou interações do usuário e use pseudo-elementos quando quiser adicionar estilos a partes específicas do conteúdo de um elemento.
+
+-REGRA CSS:
+div > p, seleciona todos os elementos <p> que são descendentes diretos de um elemento <div>. Isso significa que se aplicará apenas aos parágrafos que estão diretamente dentro de um elemento <div>, excluindo os parágrafos que estão dentro de outros elementos dentro do <div>. Ou seja, A regra CSS div > p seleciona parágrafos que são filhos diretos de elementos <div>.
+EX:
+ 
+/* Esta regra CSS seleciona parágrafos que são filhos diretos de elementos <div> e os oculta */
+div > p {
+    display: none;
+}
+
+/* Quando um elemento <div> é passado por cima (hover), os parágrafos filhos diretos dele serão exibidos como um bloco com cor de texto branca, fundo vermelho e largura de 300px */
+div:hover > p {
+    display: block;
+    color: white;
+    background-color: red;
+    width: 300px;
+}
+
+/* Quando um elemento <div> é passado por cima (hover), a cor de texto do próprio <div> muda para vermelho */
+div:hover {
+    color: red;
+}
+
+EXPLICAÇÃO DO CÓDGO ACIMA: Essas regras de CSS estão ocultando os parágrafos dentro de elementos <div> e, quando o <div> é passado por cima (hover), os parágrafos são exibidos em um bloco vermelho com texto branco, enquanto o próprio <div> muda sua cor de texto para vermelho.
+
+PSEUDOELEMENTO:Um pseudoelemento é uma maneira de selecionar e estilizar partes específicas de um elemento HTML, sem a necessidade de adicionar HTML adicional. O ::after é um dos pseudoelementos mais comuns.
+
+Quando você usa ::after, você está essencialmente criando um elemento virtual que é inserido após o conteúdo do elemento selecionado. Este elemento virtual pode ser estilizado usando CSS da mesma forma que um elemento real.
+
+Por exemplo, se você quiser adicionar um ícone de seta após um link, você pode fazer isso usando ::after. Aqui está um exemplo de código CSS:
+
+css
+Copy code
+.link::after {
+    content: "➔"; /* Adiciona conteúdo ao pseudo-elemento */
+    margin-left: 5px; /* Define uma margem à esquerda para separá-lo do texto */
+    color: blue; /* Cor do ícone */
+}
+Neste exemplo, o ::after adiciona uma seta após qualquer elemento com a classe .link. O content define o que será exibido após o conteúdo original do elemento, e outros estilos podem ser aplicados normalmente.
+
+O uso de pseudo-elementos como ::after é útil para adicionar decorações visuais, ícones, ou outros elementos que não estão diretamente presentes no HTML, mantendo assim o HTML mais limpo e semântico.
+
+____________________________________________________________________________________________________________________________________________________
+"Box-level" e "inline-level" são dois conceitos importantes em CSS (Cascading Style Sheets) que descrevem o comportamento de elementos HTML em relação ao fluxo de layout na página.
+
+Box-level:
+Elementos box-level são aqueles que são formatados como caixas retangulares independentes no layout da página.
+Eles ocupam toda a largura disponível do seu contêiner pai por padrão, a menos que sejam explicitamente dimensionados de outra forma.
+Exemplos comuns de elementos box-level incluem <div>, <p>, <ul>, <li>, <h1>-<h6>, <main>, <header>, <nav>, <article>, <aside>, <footer>, <form>, <video>
+Eles normalmente começam em uma nova linha, criando um "bloco" na estrutura da página.
+Inline-level:
+Elementos inline-level são aqueles que fluem dentro do conteúdo de um bloco, geralmente entre o texto.
+Eles não quebram a linha por padrão, a menos que haja uma quebra explícita.
+Exemplos comuns de elementos inline-level incluem <span>, <a>, <strong>, <em>, <img>, <input>, <label>, <input>, <select>, <button>, <sup>-sub>, <small>, <code>
+Eles se ajustam ao conteúdo que contêm, ocupando apenas o espaço necessário.
+Diferenças:
+
+Comportamento de Layout:
+Os elementos box-level começam em uma nova linha e ocupam toda a largura disponível, formando blocos distintos.
+Os elementos inline-level fluem dentro do texto ou do conteúdo, ocupando apenas o espaço necessário para o seu conteúdo.
+Manipulação de Dimensões:
+Os elementos box-level podem ser facilmente manipulados em termos de largura, altura, margens e preenchimento.
+Os elementos inline-level geralmente têm menos controle sobre dimensões, já que seu tamanho é determinado pelo conteúdo que contêm.
+Contexto de Estilo:
+Os elementos box-level são frequentemente usados para agrupar conteúdo e aplicar estilos de layout.
+Os elementos inline-level são frequentemente usados para estilizar partes do texto ou para adicionar elementos dentro do fluxo do texto.
+Em resumo, enquanto os elementos box-level formam blocos distintos na página, os elementos inline-level fluem dentro do texto ou do conteúdo, proporcionando diferentes maneiras de organizar e estilizar o conteúdo da página da web.
+
+-USER AGENT: Quando inspecionamos uma página que criamos ou uma qualquer e clicamos em algum elemento e aparece algumas configurações de html e css, mas que você não fez, é o navegador(user agent) que coloca automaticamente como padrão.
+
+-OBS-PADDING: Quando for configurar um padding de um elemento, comece pelo top, depois right, depois bottom, depois left. Ou seja, sentido horário.
+- PARA CENTRALZAR UMA CAIXA: Usar margin: auto;
+- PARA CENTRALZAR UM TEXTO: Usar text-align: center;
+____________________________________________________________________________________________________________________________________________________
+
+-SHORTHAND:
+Quando se trata de propriedades CSS como padding, margin, border, entre outras, você pode definir os valores de várias maneiras diferentes: usando shorthand (abreviação) ou definindo os valores individualmente para cada lado.
+
+Aqui está a diferença entre os dois:
+
+Shorthand (Abreviação):
+Ao usar o shorthand, você especifica todos os valores em uma única linha de código, em uma ordem específica. Por exemplo:
+
+padding: padding: 10px; (10 pixels em todos os lados)
+padding-top e padding-bottom / padding-left e padding-right: padding: 10px 20px; (10 pixels no topo e na base, 20 pixels nos lados esquerdo e direito)
+padding-top, padding-right, padding-bottom e padding-left: padding: 10px 20px 15px 25px; (10 pixels no topo, 20 pixels no lado direito, 15 pixels na base, 25 pixels no lado esquerdo)
+Definindo Individualmente:
+Ao definir os valores individualmente, você especifica os valores separadamente para cada lado. Por exemplo:
+
+padding-top: padding-top: 10px;
+padding-right: padding-right: 20px;
+padding-bottom: padding-bottom: 15px;
+padding-left: padding-left: 25px;
+Vantagens do Shorthand:
+Concisão: O shorthand é mais conciso, especialmente quando todos os valores são iguais ou quando apenas dois valores diferentes são usados.
+Legibilidade: Pode ser mais fácil de entender e manter o código quando os valores são agrupados em uma única linha.
+Facilidade de modificação: É mais fácil de modificar os valores quando eles estão agrupados em uma única linha.
+Vantagens de Definir Individualmente:
+Clareza: Definir individualmente pode ser mais claro e explícito sobre qual lado está recebendo qual valor.
+Sobrescrita seletiva: É mais fácil substituir ou atualizar apenas um dos valores sem afetar os outros quando eles são definidos individualmente.
+Em resumo, a escolha entre shorthand e definição individual depende das necessidades específicas do projeto, da preferência pessoal e da clareza do código. Em muitos casos, o shorthand é preferido por sua concisão e facilidade de uso, mas em situações onde a clareza é mais importante, definir os valores individualmente pode ser preferível.
+____________________________________________________________________________________________________________________________________________________
+-BOX-SHADOW: A propriedade box-shadow é utilizada em CSS para adicionar sombras a um elemento. Ela aceita vários valores que controlam a aparência e o comportamento da sombra. Aqui estão as principais propriedades do box-shadow:
+
+Inset (opcional): Define se a sombra é interna (inset) ou externa (não definida). Se não for especificado, a sombra será considerada externa.
+Offset X: Define o deslocamento horizontal da sombra. Um valor positivo move a sombra para a direita, enquanto um valor negativo move a sombra para a esquerda.
+Offset Y: Define o deslocamento vertical da sombra. Um valor positivo move a sombra para baixo, enquanto um valor negativo move a sombra para cima.
+Blur Radius (opcional): Define o desfoque da sombra. Quanto maior o valor, mais difusa será a sombra. Se não for especificado, a sombra será nítida.
+Spread Radius (opcional): Define o tamanho da sombra. Um valor positivo aumenta o tamanho da sombra, enquanto um valor negativo a reduz. Se não for especificado, a sombra será do mesmo tamanho que o elemento.
+Cor: Define a cor da sombra.
+Aqui está um exemplo de como a propriedade box-shadow é usada:
+
+
+box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+Este exemplo cria uma sombra interna (inset) com um deslocamento horizontal de 0 pixels, um deslocamento vertical de 0 pixels, um raio de desfoque de 10 pixels, um raio de expansão de 5 pixels e uma cor preta com 50% de opacidade.
+
+Você pode ajustar esses valores conforme necessário para criar o efeito de sombra desejado.
+____________________________________________________________________________________________________________________________________________________
+
+- VARIÁVEIS CSS: Em CSS, :root é um seletor especial que se refere ao elemento raiz do documento HTML, ou seja, o elemento <html>. Ao usar :root, você está definindo variáveis CSS globais, conhecidas como variáveis customizadas ou variáveis CSS.
+
+No exemplo que você forneceu, :root está sendo usado para definir seis variáveis de cores diferentes usando a sintaxe --nome-da-variável: valor;. Essas variáveis de cores podem ser usadas em qualquer lugar em seu CSS, o que proporciona uma maneira eficiente de gerenciar cores em seu código. Aqui está como você poderia usar essas variáveis em seu CSS:
+
+
+body {
+    background-color: var(--cor0); /* Usa a primeira cor definida */
+}
+
+.header {
+    color: var(--cor3); /* Usa a terceira cor definida */
+}
+
+.button {
+    background-color: var(--cor5); /* Usa a quinta cor definida */
+}
+Usando variáveis CSS dessa maneira, você pode facilmente atualizar cores em todo o seu site ajustando os valores em :root, em vez de precisar alterar manualmente cada instância de cor em seu código CSS. Isso torna o código mais modular e fácil de manter. Ou seja, as variáveis css facilitam a organização das propriedades que eu quero usar no css. Elas permitem que você defina valores que podem ser reutilizados em várias partes do seu estilo, proporcionando consistência e facilitando a manutenção.
+
+Ao definir variáveis CSS em :root, você as torna globais e acessíveis em todo o seu estilo, o que significa que você pode usá-las em qualquer seletor. Isso elimina a necessidade de repetir os valores de propriedade várias vezes em seu código CSS e facilita a atualização de valores em todo o seu projeto, caso você decida fazer alterações.
+
+Além disso, as variáveis CSS também tornam seu código mais legível e organizado, pois você pode atribuir nomes significativos às suas variáveis, tornando mais claro o propósito de cada valor. Isso pode facilitar a colaboração com outros desenvolvedores e a manutenção do código no futuro. Quando crio as variáveis é só apertar ctrl + espaço e as variáveis com os valores aparecerão(nesse caso as cores), e se você alterar os valores contidos nas variáveis(as cores), tudo que tiver sido aplicado também será modificado.
+____________________________________________________________________________________________________________________________________________________
+-RAIZ DO SITE: A "raiz do site" refere-se ao nível mais alto da estrutura de um site. Em termos de HTML, a raiz do site é representada pelo elemento <html>, que contém todo o conteúdo do documento HTML. Este elemento é o pai de todos os outros elementos dentro da estrutura do site.
+
+O uso de :root no CSS é um pouco diferente. Em CSS, :root é um seletor especial que se refere ao elemento raiz do documento HTML, ou seja, o elemento <html>. Ao usar :root, você pode definir e acessar variáveis CSS globais, tornando-as disponíveis em todo o seu estilo.
+
+Portanto, quando você define variáveis CSS dentro de :root, essas variáveis são consideradas globais e podem ser usadas em qualquer lugar em seu arquivo CSS. Isso facilita a manutenção e a consistência do estilo em todo o seu site, já que você pode definir valores comuns uma vez e usá-los em vários lugares.
+____________________________________________________________________________________________________________________________________________________
+-Font-Face: @font-face é uma regra em CSS que permite aos desenvolvedores especificarem fontes personalizadas para serem usadas em páginas da web. Com essa regra, você pode incorporar fontes externas nos seus estilos CSS, o que significa que você não está mais limitado às fontes padrão disponíveis no sistema do usuário. Posso usar quando baixar alguma fonte.
+
+Aqui está como funciona:
+
+Definição da Fonte:
+Você usa @font-face para informar ao navegador onde encontrar a fonte que deseja usar. Você pode fornecer o caminho para o arquivo de fonte e especificar um nome para a fonte.
+
+Nome da Fonte:
+Após definir a fonte usando @font-face, você pode usá-la como faria com qualquer outra fonte, referenciando o nome definido em outras regras de estilo.
+
+Por exemplo, suponha que você queira usar uma fonte personalizada chamada "MinhaFonte" em seu site. Você pode fazer isso com @font-face da seguinte maneira:
+
+
+@font-face {
+    font-family: MinhaFonte;
+    src: url('caminho/para/o/arquivo/fonte.ttf');
+}
+Depois de definir a fonte, você pode usá-la em outras regras CSS assim:
+
+css
+Copy code
+body {
+    font-family: MinhaFonte, Arial, sans-serif;
+}
+Neste exemplo, se a fonte "MinhaFonte" não estiver disponível, o navegador usará a fonte Arial como alternativa, e se Arial não estiver disponível, ele usará uma fonte sans-serif genérica.
+
+O uso de @font-face é útil quando você deseja manter a consistência da marca em seu site ou quando deseja usar uma fonte específica que não está disponível na maioria dos sistemas. Isso permite que você crie designs de página mais personalizados e exclusivos.
+_______________________________________________________________________________________________________________________________________________________________________
+-EXEMPLO DE FONT-FACE DO SITE ANDROID:
+@font-face {
+    font-family: 'Android';
+    src: url('/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+EXPLICAÇÃO: Esse trecho de código CSS é uma regra @font-face, que é usada para definir uma fonte personalizada para uso em um site. Vamos analisar cada parte:
+
+@font-face: É uma diretiva do CSS que permite aos autores de página especificar fontes online a serem baixadas e usadas em suas páginas da web. Esta regra indica que estamos definindo uma nova fonte para uso na página.
+
+font-family: 'Android';: Define o nome da família de fontes. Neste caso, estamos nomeando a fonte como 'Android'. Este nome será usado posteriormente para aplicar essa fonte a elementos específicos no HTML.
+
+src: url('/fontes/idroid.otf') format('opentype');: Esta linha especifica a localização da fonte e seu formato. Aqui estão os detalhes:
+
+url('/fontes/idroid.otf'): Especifica o caminho para o arquivo da fonte. Neste exemplo, está sendo usado um caminho absoluto, indicando que a fonte está localizada na pasta "fontes" na raiz do site, e o nome do arquivo da fonte é "idroid.otf".
+format('opentype'): Indica o formato do arquivo da fonte. Neste caso, estamos usando o formato de fonte OpenType (otf).
+font-weight: normal;: Define o peso da fonte como normal. Isso significa que estamos usando a variação padrão da fonte, que não é nem negrito nem itálico.
+
+No geral, essa regra @font-face permite que você defina e use uma fonte personalizada em seu site, garantindo que ela seja baixada e exibida corretamente pelos navegadores. Depois de definir essa regra, você pode usar a fonte 'Android' especificando font-family: 'Android'; em qualquer outro seletor CSS para aplicar essa fonte a elementos específicos em sua página HTML.
+_______________________________________________________________________________________________________________________________________________________________________
+-@IMORT: @import é uma regra em CSS que permite importar estilos de outros arquivos CSS para o arquivo atual. Com @import, você pode dividir seu estilo em vários arquivos e organizá-los de forma mais modular e gerenciável.
+
+Aqui está como funciona:
+
+Importando Estilos:
+Você usa @import para trazer o conteúdo de outro arquivo CSS para o arquivo atual. Você pode especificar o caminho para o arquivo CSS que deseja importar.
+
+Ordem de Importação:
+É importante observar que as regras importadas com @import são aplicadas na ordem em que aparecem no arquivo CSS. Portanto, se você tiver várias regras @import, a ordem em que elas aparecem afetará a ordem em que os estilos são aplicados.
+
+Por exemplo, suponha que você tenha dois arquivos CSS chamados estilos-base.css e estilos-adicionais.css, e você deseja importar estilos-adicionais.css para o arquivo estilos-base.css. Você pode fazer isso com @import da seguinte maneira:
+
+No arquivo estilos-base.css:
+
+
+/* estilos-base.css */
+@import url('estilos-adicionais.css');
+
+/* Outras regras de estilo */
+body {
+    font-family: Arial, sans-serif;
+}
+No arquivo estilos-adicionais.css:
+
+
+/* estilos-adicionais.css */
+h1 {
+    color: blue;
+}
+Neste exemplo, as regras de estilo definidas em estilos-adicionais.css serão importadas e aplicadas em estilos-base.css, permitindo que você modularize seus estilos de acordo com a necessidade e mantenha seu código CSS organizado e mais fácil de gerenciar.
+_______________________________________________________________________________________________________________________________________________________________________-SELETOR GLOBAL CSS *:O seletor global * em CSS é conhecido como seletor universal. Ele seleciona todos os elementos HTML em uma página e aplica estilos a eles. Aqui está como funciona e como você pode usá-lo:
+
+* {
+  /* Estilos aplicados a todos os elementos */
+}
+Quando você usa * como seletor, ele corresponde a todos os elementos HTML na página, incluindo <html>, <body>, <div>, <p>, <a>, <span>, <h1>, e assim por diante.
+
+O seletor universal é útil quando você deseja aplicar estilos globais que afetam todos os elementos em sua página, sem a necessidade de selecionar cada elemento individualmente. Isso pode ser útil para definir estilos de base, como definições de fonte, margens, preenchimentos e assim por diante.
+
+No entanto, é importante ter cuidado ao usar o seletor universal, pois ele pode afetar o desempenho do seu site se você estiver aplicando estilos desnecessários a muitos elementos. Use-o com moderação e certifique-se de que os estilos aplicados sejam realmente necessários em todos os elementos da página.	
+
+
+
+
+

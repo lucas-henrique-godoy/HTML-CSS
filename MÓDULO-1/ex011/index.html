@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Happy Mistake - RKVC.mp3" controls autoplay></audio> <!--Primeira maneira de inserir audio no site-->
+    <!--COMPATIVEL COM OS FORMATOS: MP3 WAV OGG-->
+
+    <audio preload="auto" autoplay controls loop>
+            <source src="midia/guanacast-33.mp3" type="audio/mpeg">             <!--O navegador tenta reproduzir pela ordem, mas é preciso ter os arquivos com os respectivos formatos. Obs: Evitar o wav, são arquivos pesados.-->
+            <source src="midia/guanacast-33.ogg" type="audio/ogg">      
+            <source src="midia/guanacast-33.wav" type="audio/wav"> 
+            <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>           
+    </audio>
+    
+
+
+</body>
+</html>
+
+
+
+
+    <!--Este é um exemplo de código HTML utilizado para implementar uma imagem responsiva usando a tag <picture> com várias fontes (<source>) e a tag <img>.
+
+<picture>: É uma tag HTML5 que permite especificar várias fontes de imagem para exibir, dependendo das características do dispositivo ou das preferências do usuário.
+<source>: Dentro da tag <picture>, são especificadas as diferentes fontes da imagem, cada uma com um conjunto de atributos media e srcset.
+media="(max-width: 750px )": Especifica a condição de mídia na qual essa fonte da imagem será aplicada. Neste caso, a imagem foto-p.png será usada quando a largura da janela do navegador for de no máximo 750 pixels.
+srcset="imagens/foto-p.png": Especifica o caminho da imagem a ser carregada quando a condição de mídia especificada for atendida.
+type="image/png": Define o tipo de arquivo da imagem (no caso, PNG).
+O segundo bloco <source> segue uma lógica semelhante, mas para uma imagem de tamanho médio (foto-m.png), que será usada quando a largura da janela do navegador for de no máximo 1050 pixels.
+<img>: Esta é a tag padrão para exibir a imagem. Se nenhuma das condições especificadas nas tags <source> for atendida, a imagem foto-g.png será carregada.
+src="imagens/foto-g.png": Caminho da imagem a ser carregada como fallback ou para navegadores que não suportam a tag <picture>.
+alt="Imagem flexível": Texto alternativo para acessibilidade, exibido se a imagem não puder ser carregada ou para usuários que utilizam leitores de tela.-->
