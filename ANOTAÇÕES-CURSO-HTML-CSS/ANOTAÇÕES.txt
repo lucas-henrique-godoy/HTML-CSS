@@ -30,6 +30,7 @@ ________________________________________________________________________________
 _______________________________________________________________________________________________________________________________________________________________________
 -Site paa pegar emojis: https://emojipedia.org/
 _______________________________________________________________________________________________________________________________________________________________________
+-Site para gerar qr code: https://www.qr-code-generator.com/
 
 FORMATOS DE IMAGEM: Em sites usar imagens de tamanho máximo 1500 pixels. Normalmente uma imagem num site tem tamanho de 600 pixels.
 JPEG e PNG são dois formatos de imagem populares com diferenças essenciais:
