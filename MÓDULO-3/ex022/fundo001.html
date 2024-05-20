@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        body {
+            background-image: url(imagens/wallpaper001.jpg); /* Define a imagem de fundo do corpo */
+        }
+        div.quadrado {
+            border: 2px solid black; /* Define uma borda de 2px sólida preta */
+            border-radius: 10px; /* Define um raio de borda arredondada de 10px */
+            background-color: lightgray; /* Define a cor de fundo do quadrado como cinza claro */
+            width: 300px; /* Define a largura do quadrado como 300px */
+            height: 300px; /* Define a altura do quadrado como 300px */
+            display: inline-block; /* Permite que os quadrados sejam exibidos um ao lado do outro */
+        }
+            /* 3 MANEIRAS DE CONFIGURAR O FUNDO */
+        div#q1 {
+            background-color: skyblue; /* Define a cor de fundo do quadrado 1 como azul claro */
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red); /* Define um gradiente linear de amarelo para vermelho como fundo do quadrado 2 */
+        }
+
+        div#q3 {
+            background-image: url(imagens/pattern003.png); /* Define a imagem de fundo do quadrado 3 */
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="quadrado" id="q1">
+        <!-- Primeiro quadrado -->
+    </div>
+
+    <div class="quadrado" id="q2">
+        <!-- Segundo quadrado -->
+    </div>
+
+    <div class="quadrado" id="q3">
+        <!-- Terceiro quadrado -->
+    </div>
 </body>
 </html>
