@@ -3,24 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Fundo fixo de tela</title>
     <style>
+        /* Estilos para o body */
         body {
-            height: 100vh;
-            background-color: black;
+            height: 100vh; /* Definindo a altura do corpo como 100% da altura da viewport (vh) */
+            
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: repeat-y;
-            background-size: cover;           
+            background-repeat: no-repeat;
+            background-size: cover;   
+            background-attachment: fixed; 
+            
+            - Shorthand - background ↓↓↓
+                color > image > position > repeat > [size] > attachment
+            */  
+            
+            /* Definindo o plano de fundo */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
+            background-size: cover; /*Precisei colocar esse size separado, pois na shorthand não funciona e e a imagem some. Cobrindo todo o corpo com a imagem de fundo */
+
         }
 
+        /* Estilos para a seção principal */
         main {
-            background-color: white;            
-            width: 400px;
-            padding: 10px;
+            /* Definindo uma largura máxima de 400 pixels */
+            max-width: 400px;
+            /* Centralizando horizontalmente o conteúdo */
             margin: auto;
+            /* Adicionando um preenchimento interno de 10 pixels */
+            padding: 10px;
+            /* Adicionando uma borda sólida de 1 pixel com cor darkblue */
             border: 1px solid darkblue;
+            /* Adicionando um raio de borda de 15 pixels */
             border-radius: 15px;
+            /* Definindo uma cor de fundo branca */
+            background-color: white;
         }
     </style>
 <body>
