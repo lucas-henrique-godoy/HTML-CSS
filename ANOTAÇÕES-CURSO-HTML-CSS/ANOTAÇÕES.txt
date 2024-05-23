@@ -365,7 +365,38 @@ Quando você usa * como seletor, ele corresponde a todos os elementos HTML na p�
 
 O seletor universal é útil quando você deseja aplicar estilos globais que afetam todos os elementos em sua página, sem a necessidade de selecionar cada elemento individualmente. Isso pode ser útil para definir estilos de base, como definições de fonte, margens, preenchimentos e assim por diante.
 
-No entanto, é importante ter cuidado ao usar o seletor universal, pois ele pode afetar o desempenho do seu site se você estiver aplicando estilos desnecessários a muitos elementos. Use-o com moderação e certifique-se de que os estilos aplicados sejam realmente necessários em todos os elementos da página.	
+No entanto, é importante ter cuidado ao usar o seletor universal, pois ele pode afetar o desempenho do seu site se você estiver aplicando estilos desnecessários a muitos elementos. Use-o com moderação e certifique-se de que os estilos aplicados sejam realmente necessários em todos os elementos da página.
+_______________________________________________________________________________________________________________________________________________________________________-MARGIN: AUTO- Centraliza os elementos verticalmente. é necessário criar uma caixa e ai utiliza esssa propriedade. EX:
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
+_______________________________________________________________________________________________________________________________________________________________________-CENTRALIZAR ELEMENTOS NA VERTICAL: 
 
 
 
