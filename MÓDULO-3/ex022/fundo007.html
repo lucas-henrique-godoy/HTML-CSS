@@ -2,36 +2,52 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para garantir que o layout seja ajustado conforme o dispositivo -->
     <title>Alinhamento vertical</title>
+    <!-- Título da página que aparece na aba do navegador -->
     <style>
         #container {
             background-image: url(imagens/target001.png);
+            /* Define a imagem de fundo para o elemento com id "container" */
             background-size: 100% 100%;
+            /* Ajusta o tamanho da imagem de fundo para cobrir 100% da largura e altura do container */
             position: relative;
+            /* Define o posicionamento como relativo, necessário para posicionar elementos filhos de forma absoluta dentro deste */
             height: 96vh;
+            /* Define a altura do container como 96% da altura da viewport */
             padding: 10px;
+            /* Adiciona um espaçamento interno de 10 pixels em todos os lados */
             background-color: purple;
+            /* Define a cor de fundo como roxo */
         }
 
         #conteudo {
             position: absolute;
+            /* Define o posicionamento como absoluto, permitindo que seja posicionado em relação ao seu elemento pai, que é o container */
             height: 200px;
+            /* Define a altura do elemento "conteudo" */
             width: 400px;
+            /* Define a largura do elemento "conteudo" */
             background-color: yellow;
+            /* Define a cor de fundo como amarelo */
 
             left: 50%;
+            /* Posiciona o lado esquerdo do elemento "conteudo" a 50% da largura do elemento pai (container) */
             top: 50%;
+            /* Posiciona o topo do elemento "conteudo" a 50% da altura do elemento pai (container) */
 
-            transform: translate();
-            
+            transform: translate(-50%, -50%);
+            /* Desloca o elemento "conteudo" pela metade de sua largura para a esquerda e pela metade de sua altura para cima, centrando-o perfeitamente no container */
         }
     </style>
 </head>
 <body>
     <section id="container">
+        <!-- Seção que atua como container principal, contendo o artigo -->
         <article id="conteudo">
-
+        <!-- Artigo que será centralizado vertical e horizontalmente dentro do container -->
         </article>
     </section>
 </body>
