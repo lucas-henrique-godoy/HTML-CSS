@@ -1,4 +1,7 @@
-- Sites para procurar imagens que posso usar nos meus projetos sem dar direito autoral: https://unsplash.com/pt-br,  https://www.pexels.com/pt-br/.
+- Sites para procurar imagens que posso usar nos meus projetos sem dar direito autoral: 
+* https://unsplash.com/pt-br
+* https://www.pexels.com/pt-br/
+* https://pixabay.com/pt/
 _______________________________________________________________________________________________________________________________________________________________________
 - Site para baixar programa de manipulação de fotos: https://www.gimp.org/.
 _______________________________________________________________________________________________________________________________________________________________________
