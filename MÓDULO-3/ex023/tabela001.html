@@ -14,22 +14,18 @@
 
         table {
            width: 400px;    /* Define a largura da tabela */
+           height: 400px;   /* Define a altura da tabela */
            border-collapse: collapse;   /* Remove os espaços entre as bordas das células da tabela */
-        }
-
-        tr.linha {
-            background-color: gray; /* Define a cor de fundo para linhas com a classe "linha" */
-        }
+        }        
 
         td {
             border: 1px solid black;    /* Define uma borda preta ao redor das células da tabela */
             padding: 8px;   /* Adiciona um espaçamento interno (padding) de 8px dentro das células */
+            text-align: center; /*Alinhamento horizontal*/
+            vertical-align: top; /*Alinhamento vertical*/    
         }
 
-        td.dado {
-            background-color: yellow;
-            /* Define a cor de fundo amarelo para células com a classe "dado" */
-        }
+        
     </style>
 </head>
 <body>
@@ -53,7 +49,7 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <!-- Segunda linha da tabela com a classe "linha" que define o fundo cinza -->
             <td>A2</td>
             <td>B2</td>
@@ -68,7 +64,7 @@
         <tr>
             <!-- Quarta linha da tabela -->
             <td>A4</td>
-            <td class="dado">B4</td>
+            <td>B4</td>
             <!-- A célula B4 tem a classe "dado", que define o fundo amarelo -->
             <td>C4</td>
         </tr>
