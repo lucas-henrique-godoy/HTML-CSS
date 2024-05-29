@@ -1,51 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Declaração do tipo de documento HTML5 -->
     <meta charset="UTF-8">
+    <!-- Configuração de visualização para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
     <title>Tabelas</title>
+    <!-- Estilos CSS internos -->
     <style>
+        /* Define a fonte padrão para o corpo da página */
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        /* Estiliza a tabela */
         table {
-            width: 500px;
-            border-collapse: collapse;
+            width: 500px; /* Define a largura da tabela */
+            border-collapse: collapse; /* Remove os espaços entre as bordas das células */
         }
 
+        /* Estiliza as células e os cabeçalhos da tabela */
         td, th {
-            border: 1px solid black;
+            border: 1px solid black; /* Adiciona uma borda preta */
+            padding: 10px; /* Adiciona um preenchimento interno */
+        }
+
+        /* Estiliza a legenda da tabela */
+        caption {
+            font-size: 1.5em; /* Aumenta o tamanho da fonte */
+            font-weight: bold; /* Deixa o texto em negrito */
+            padding: 10px; /* Adiciona um preenchimento interno */
+            background-color: lightgray; /* Define a cor de fundo */
+        }
+
+        /* Estiliza os cabeçalhos e rodapés da tabela */
+        thead, tfoot {
+            background-color: #383838; /* Define a cor de fundo */
+            color: white; /* Define a cor do texto */
+        }
+
+        /* Alinha o texto das células com a classe 'num' à direita */
+        td.num {
+            text-align: right;
         }
     </style>
 </head>
 <body>
+    <!-- Título principal da página -->
     <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
-            THEAD
-                TR, TD, TH
-            TBODY
-                TR, TD, TH
-            TFOOT
-                TR, TD, TH
+            CAPTION (legenda)
+            THEAD (cabeçalho)
+                TR (linha), TD (célula de dados), TH (célula de cabeçalho)
+            TBODY (corpo)
+                TR (linha), TD (célula de dados), TH (célula de cabeçalho)
+            TFOOT (rodapé)
+                TR (linha), TD (célula de dados), TH (célula de cabeçalho)
     -->
+    <!-- Início da tabela -->
     <table>
+        <!-- Legenda da tabela -->
+        <caption>População das Unidades Federativas</caption>
+        <!-- Cabeçalho da tabela -->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!-- Cabeçalho da coluna 'Estado' (OU  Título da Tabela). Esse tem escopo de coluna-->
+                <th scope="col" style="width: 50px;">População</th> <!-- Cabeçalho da coluna 'População'. Esse tem escopo de coluna. E com uma largura fixa.-->
             </tr>
         </thead>
+        <!-- Corpo da tabela -->
         <tbody>
+            <!-- Linhas com os dados das unidades federativas e suas populações -->
             <tr>
                 <td>São Paulo</td>
-                <td>44 411 238</td>
+                <td class="num">44.411.238</td> <!-- Classe 'num' para alinhar o texto à direita -->
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.141.626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.444.380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.882.965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.058.931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.794.957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.121.025</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.610.361</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.056.495</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.775.805</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3.974.687</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3.941.613</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3.833.712</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.658.649</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.302.729</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.271.199</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.127.683</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2.817.381</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.757.013</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.209.558</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.581.196</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.511.460</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830.018</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">733.759</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636.707</td>
             </tr>
         </tbody>
+        <!-- Rodapé da tabela -->
         <tfoot>
-
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!--Esse tem escopo de linha-->
+                <td class="num"><strong>203.062.512</strong></td>
+            </tr>
         </tfoot>
     </table>
 </body>
