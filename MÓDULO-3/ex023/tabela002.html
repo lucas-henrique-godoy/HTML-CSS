@@ -16,7 +16,7 @@
 
         /* Estiliza a tabela */
         table {
-            width: 500px;  /*AQUI TEM UMA PARTE DA CONFIGURAÇÃO DO CABEÇALHO FIXO*/  /* Define a largura da tabela */
+            width: 500px;  /*AQUI TEM UMA PARTE DA CONFIGURAÇÃO DO CABEÇALHO FIXO(Não funciona em todos os navegadores)*/  /* Define a largura da tabela */
             border-collapse: collapse; /* Remove os espaços entre as bordas das células */
             position: relative;  /* Define a posição relativa, necessária para elementos filhos com posição absoluta ou relativa */
         }
@@ -41,7 +41,7 @@
             color: white; /* Define a cor do texto */
         }
 
-        thead > tr > th {  /*AQUI TEM OUTRA PARTE DA CONFIGURAÇÃO DO CABEÇALHO FIXO*/   /* Define o estilo para as células de cabeçalho (th) que estão dentro de uma linha (tr) que está dentro de um cabeçalho de tabela (thead) */
+        thead > tr > th {  /*AQUI TEM OUTRA PARTE DA CONFIGURAÇÃO DO CABEÇALHO FIXO (Não funciona em todos os navegadores)*/   /* Define o estilo para as células de cabeçalho (th) que estão dentro de uma linha (tr) que está dentro de um cabeçalho de tabela (thead) */
             position: sticky; /* Define a posição dos elementos como 'sticky', fazendo com que fiquem fixos em relação ao seu contêiner quando o usuário rolar a página */
             top: -1px;  /* Desloca as células de cabeçalho para cima em 1 pixel para evitar uma sobreposição com a borda superior da tabela */
             background-color: #383838;  /* Define a cor de fundo para as células de cabeçalho */
