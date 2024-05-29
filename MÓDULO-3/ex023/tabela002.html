@@ -40,6 +40,15 @@
             color: white; /* Define a cor do texto */
         }
 
+        tbody > tr:nth-child(odd) { /* Seleciona todas as linhas ímpares. Podemos usar também 2n-1*/
+            background-color: white; /* Aplica fundo branco às linhas ímpares */
+        }
+
+    /* Estilizando linhas pares da tabela */
+        tbody > tr:nth-child(even) { /* Seleciona todas as linhas pares. Podemos usar também 2n*/
+            background-color: lightgray; /* Aplica fundo cinza claro às linhas pares */
+        }
+
         /* Alinha o texto das células com a classe 'num' à direita */
         td.num {
             text-align: right;
