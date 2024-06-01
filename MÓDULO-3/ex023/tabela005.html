@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como Português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a página para o tamanho da tela do dispositivo -->
+    <title>Exercício de Tabela</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto no corpo da página */
+        }
+
+        table {
+            border-collapse: collapse;  /* Remove os espaços entre as bordas das células */
+            width: 500px; /* Define a largura da tabela */
+        }
+
+        caption {
+            font-size: 1.3em; /* Define o tamanho da fonte da legenda da tabela */
+            font-weight: bolder; /* Define a fonte como mais pesada (negrito) */
+            padding: 8px; /* Define o espaçamento interno da legenda */
+        }
+
+        th, td {
+            border: 1px solid black; /* Define uma borda preta de 1 pixel ao redor das células da tabela */
+            padding: 8px; /* Define o espaçamento interno das células da tabela */
+        }
+
+        col.cnome, col.csexo {
+            background-color: chartreuse; /* Define a cor de fundo das colunas 'Nome' e 'Sexo' como chartreuse (verde) */
+        }
+
+        .cgrupo {
+            background-color: red; /* Define a cor de fundo das colunas 'Idade' e 'Profissão' como vermelho */
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup> <!-- Define um grupo de colunas com estilos específicos -->
+            <col class="cnome"> <!-- Define a primeira coluna com a classe 'cnome' -->
+            <col class="csexo"> <!-- Define a segunda coluna com a classe 'csexo' -->
+            <col class="cgrupo" span="2"> <!-- Define as próximas duas colunas (Idade e Profissão) com a classe 'cgrupo' -->
+        </colgroup>
+        <caption>Cadastro</caption> <!-- Legenda da tabela -->
+        <tr>
+            <th scope="col">Nome</th> <!-- Cabeçalho da coluna 'Nome' -->
+            <th scope="col">Sexo</th> <!-- Cabeçalho da coluna 'Sexo' -->
+            <th scope="col">Idade</th> <!-- Cabeçalho da coluna 'Idade' -->
+            <th scope="col">Profissão</th> <!-- Cabeçalho da coluna 'Profissão' -->
+        </tr>
+        <tr>
+            <td>Ana Maria</td> <!-- Célula da linha 1, coluna 'Nome' -->
+            <td>F</td> <!-- Célula da linha 1, coluna 'Sexo' -->
+            <td>25</td> <!-- Célula da linha 1, coluna 'Idade' -->
+            <td>Jornalista</td> <!-- Célula da linha 1, coluna 'Profissão' -->
+        </tr>  
+        <tr>
+            <td>Cláudio</td> <!-- Célula da linha 2, coluna 'Nome' -->
+            <td>M</td> <!-- Célula da linha 2, coluna 'Sexo' -->
+            <td>28</td> <!-- Célula da linha 2, coluna 'Idade' -->
+            <td>Programador</td> <!-- Célula da linha 2, coluna 'Profissão' -->
+        </tr> 
+        <tr>
+            <td>Gustavo</td> <!-- Célula da linha 3, coluna 'Nome' -->
+            <td>M</td> <!-- Célula da linha 3, coluna 'Sexo' -->
+            <td>42</td> <!-- Célula da linha 3, coluna 'Idade' -->
+            <td>Professor</td> <!-- Célula da linha 3, coluna 'Profissão' -->
+        </tr> 
+        <tr>
+            <td>Hélio</td> <!-- Célula da linha 4, coluna 'Nome' -->
+            <td>M</td> <!-- Célula da linha 4, coluna 'Sexo' -->
+            <td>19</td> <!-- Célula da linha 4, coluna 'Idade' -->
+            <td>Vendedor</td> <!-- Célula da linha 4, coluna 'Profissão' -->
+        </tr>  
+        <tr>
+            <td>Maria</td> <!-- Célula da linha 5, coluna 'Nome' -->
+            <td>F</td> <!-- Célula da linha 5, coluna 'Sexo' -->
+            <td>39</td> <!-- Célula da linha 5, coluna 'Idade' -->
+            <td>Médica</td> <!-- Célula da linha 5, coluna 'Profissão' -->
+        </tr> 
+        <tr>
+            <td>Otávio</td> <!-- Célula da linha 6, coluna 'Nome' -->
+            <td>M</td> <!-- Célula da linha 6, coluna 'Sexo' -->
+            <td>22</td> <!-- Célula da linha 6, coluna 'Idade' -->
+            <td>Nutricionista</td> <!-- Célula da linha 6, coluna 'Profissão' -->
+        </tr>      
+    </table>
+</body>
+</html>
