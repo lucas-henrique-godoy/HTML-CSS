@@ -36,14 +36,14 @@
         </caption>
         <thead>
             <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupos</th> <!--O escopo é de col, porque os dados de "Grupos" estão em 1 coluna-->
+                <th scope="col">Nomes</th> <!--O escopo é de col, porque os dados de "Nomes" estão em 1 coluna-->
+                <th colspan="3" scope="colgroup">Filmes</th> <!--O escopo é de colgroup, porque os dados de "Filmes" estão em 3 colunas-->
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th> <!--O escopo é de rowgroup, porque os dados de "Mulheres" estão em 3 linhas-->
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -62,7 +62,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th> <!--O escopo é de rowgroup, porque os dados de "Homens" estão em 3 linhas-->
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -80,6 +80,12 @@
                 <td>Táxi Driver</td>
                 <td>Tory Story</td>
             </tr>
+            <tfoot>
+                <tr>
+                    <th colspan="4" scope="row">Total</th> <!--O escopo é de row, porque os dados de "Total" estão em 1 linha-->
+                    <td>1000</td>
+                </tr>
+            </tfoot>
         </tbody>
     </table>
 </body>
