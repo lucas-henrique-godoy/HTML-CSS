@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Define o idioma da página como Português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a página para o tamanho da tela do dispositivo -->
+    <title>Tabelas responsivas</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto no corpo da página */
+        }
+
+        table {
+            border-collapse: collapse; /* Remove os espaços entre as bordas das células */
+        }
+
+        caption {
+            font-size: 1.2em; /* Define o tamanho da fonte do caption */
+            font-weight: bolder; /* Define o caption com fonte negrito */
+            padding: 20px; /* Define o espaçamento interno do caption */
+        }
+
+        th, td {
+            border: 1px solid black; /* Define uma borda preta de 1 pixel ao redor das células da tabela */
+            padding: 10px; /* Define o espaçamento interno das células da tabela */
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(228, 228, 228); /* Define a cor de fundo das linhas pares da tabela */
+        }
+
+        div#container {
+            overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se o conteúdo for muito largo */
+            /*A propriedade overflow-x: auto; Nesse caso quando a tabela esta dentro de uma div#container só faz uma rolagem na tabela, e o conteudo permance sem rolagem. Mas é necessário primeiro colocar a tabela inteira e somente ela dentro de uma div parai que isso funcione.*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1> <!-- Título principal da página -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum blanditiis placeat reiciendis perferendis praesentium aliquam nostrum vitae voluptate accusantium quos architecto officiis unde ratione provident, illo eligendi vel repudiandae voluptatibus.</p> <!-- Parágrafo de texto exemplo -->
+    <div id="container"> <!-- Contêiner para a tabela, permitindo rolagem horizontal -->
+        <table>
+            <caption>Tabelas responsivas</caption> <!-- Título da tabela -->
+            <thead> <!-- Cabeçalho da tabela -->
+                <tr>
+                    <th>Produto</th> <!-- Cabeçalho da coluna 'Produto' -->
+                    <th>Jan</th> <!-- Cabeçalho da coluna 'Jan' -->
+                    <th>Fev</th> <!-- Cabeçalho da coluna 'Fev' -->
+                    <th>Mar</th> <!-- Cabeçalho da coluna 'Mar' -->
+                    <th>Abr</th> <!-- Cabeçalho da coluna 'Abr' -->
+                    <th>Mai</th> <!-- Cabeçalho da coluna 'Mai' -->
+                    <th>Jun</th> <!-- Cabeçalho da coluna 'Jun' -->
+                    <th>Jul</th> <!-- Cabeçalho da coluna 'Jul' -->
+                    <th>Ago</th> <!-- Cabeçalho da coluna 'Ago' -->
+                    <th>Set</th> <!-- Cabeçalho da coluna 'Set' -->
+                    <th>Out</th> <!-- Cabeçalho da coluna 'Out' -->
+                    <th>Nov</th> <!-- Cabeçalho da coluna 'Nov' -->
+                    <th>Dez</th> <!-- Cabeçalho da coluna 'Dez' -->
+                </tr>
+            </thead>
+            <tbody> <!-- Corpo da tabela -->
+                <tr>
+                    <td>TV 40"</td> <!-- Produto 'TV 40"' -->
+                    <td>01</td> <!-- Venda em janeiro -->
+                    <td>04</td> <!-- Venda em fevereiro -->
+                    <td>07</td> <!-- Venda em março -->
+                    <td>12</td> <!-- Venda em abril -->
+                    <td>12</td> <!-- Venda em maio -->
+                    <td>10</td> <!-- Venda em junho -->
+                    <td>05</td> <!-- Venda em julho -->
+                    <td>02</td> <!-- Venda em agosto -->
+                    <td>01</td> <!-- Venda em setembro -->
+                    <td>01</td> <!-- Venda em outubro -->
+                    <td>04</td> <!-- Venda em novembro -->
+                    <td>16</td> <!-- Venda em dezembro -->
+                </tr>
+                <!-- Linhas subsequentes seguem o mesmo formato para diferentes produtos e vendas -->
+                <tr>
+                    <td>Home Theater</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy S20</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>iPad Mini</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>PlayStation 4</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Lava Louças</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Amazon Echo</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>07</td>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>04</td>
+                    <td>16</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
