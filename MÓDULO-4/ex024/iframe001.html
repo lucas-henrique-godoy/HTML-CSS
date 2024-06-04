@@ -4,18 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+            border: 1px dashed black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Testnado o uso de um iframe</h1>
+    <h1>Testando o uso de um iframe</h1>  
     <p>
         Acessando o site do 
 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> <!--Um iframe (ou inline frame) é um elemento HTML que permite incorporar outra página HTML dentro da página atual. Isso significa que você pode carregar conteúdo de outra URL diretamente dentro de um bloco na sua página web.-->
+            <!--Tamanho padrão de iframes 350x150px-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="no">
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a>
+
+        </iframe> <!--Um iframe (ou inline frame) é um elemento HTML que permite incorporar outra página HTML dentro da página atual. Isso significa que você pode carregar conteúdo de outra URL diretamente dentro de um bloco na sua página web.-->
         
         
         para aprender a programar.
     
     </p>
-    <p>O site do <iframe src="https://www.google.com/" frameborder="0"></iframe> também é muito legal.</p> <!--Esse não deu certo, pois alguns sites tem uma proteção para que o seu conteúdo não seja exibido dentro de iframes por sites de terceiros, pois iframes tem alguns problemas de segurança. Mas agora com html5 ja da para prever e resolver esses problemas de segurança.-->
+    <!--<p>
+
+        O site do <iframe src="https://www.google.com/" frameborder="0">
+
+    </iframe> também é muito legal, pena que não funciona dentro do iframe!</p> 
+    <p>
+        *Esse não deu certo, pois alguns sites tem uma proteção para que o seu conteúdo não seja exibido dentro de iframes por sites de terceiros, pois iframes tem alguns problemas de segurança. Mas agora com html5 ja da para prever e resolver esses problemas de segurança.
+    -->    
+
+        O repositório do Guanabara
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" scrolling="no">
+
+            <a href="https://gustavoguanabara.github.io" target="_blank">Github</a> <!--Caso o iframe não funcione em algum navegador, coloca-se um link para ter acesso.-->
+
+        </iframe>
+
+        também é legal!
+    </p>
+
+
+    <p>
+        Vamos entrar no 
+        
+            <iframe src=" https://lucas-henrique-godoy.github.io/projeto-android/" frameborder="0">
+                
+            </iframe>
+
+            Meu site.
+    </p>
 </body>
 </html>
