@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br"> <!-- Define o idioma da página como Português do Brasil -->
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a página para o tamanho da tela do dispositivo -->
-    <title>Tabelas responsivas</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Teste</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto no corpo da página */
@@ -30,18 +30,12 @@
         }
 
         tr:nth-child(odd) {
-            background-color: white;  /* Define a cor de fundo das linhas impares da tabela */
-        }
-
-        div#container {
-            overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se o conteúdo for muito largo */
-            /*A propriedade overflow-x: auto; Nesse caso quando a tabela esta dentro de uma div#container só faz uma rolagem na tabela, e o conteudo permance sem rolagem. Mas é necessário primeiro colocar a tabela inteira e somente ela dentro de uma div parai que isso funcione.*/
+            background-color: white;    /* Define a cor de fundo das linhas impares da tabela */
         }
     </style>
+    
 </head>
 <body>
-    <h1>Tabelas em telas pequenas</h1> <!-- Título principal da página -->
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum blanditiis placeat reiciendis perferendis praesentium aliquam nostrum vitae voluptate accusantium quos architecto officiis unde ratione provident, illo eligendi vel repudiandae voluptatibus.</p> <!-- Parágrafo de texto exemplo -->
     <div id="container"> <!-- Contêiner para a tabela, permitindo rolagem horizontal -->
         <table>
             <caption>Vendas de produtos por mês</caption> <!-- Título da tabela -->
