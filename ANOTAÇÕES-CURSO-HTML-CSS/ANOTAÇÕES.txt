@@ -400,7 +400,37 @@ ________________________________________________________________________________
 </body>
 </html>
 _______________________________________________________________________________________________________________________________________________________________________-CENTRALIZAR ELEMENTOS NA VERTICAL: 
+-SEGURANÇA DENTRO DE IFRAMES
 
+#atributos referrerpolicy e sandbox:
+
+referrerpolicy:
+O atributo referrerpolicy especifica como o cabeçalho HTTP Referer deve ser tratado ao carregar o conteúdo de um recurso.
+Ele pode ser aplicado a elementos <a>, <area>, <iframe>, <img>, <link>, e <script>.
+Valores comuns para referrerpolicy incluem:
+no-referrer: Indica que o cabeçalho Referer não deve ser enviado ao acessar o recurso.
+no-referrer-when-downgrade: O comportamento padrão, onde o cabeçalho Referer é enviado ao acessar o recurso, a menos que a conexão para o recurso de destino seja menos segura do que a conexão de origem.
+same-origin: Indica que o cabeçalho Referer deve ser enviado apenas quando a URL de origem e destino têm a mesma origem.
+strict-origin: Indica que o cabeçalho Referer deve ser enviado apenas quando a URL de origem e destino têm a mesma origem, excluindo subdomínios.
+strict-origin-when-cross-origin: Comportamento semelhante a strict-origin, mas permite enviar o cabeçalho Referer ao acessar recursos de origens cruzadas.
+origin: Indica que o cabeçalho Referer deve ser enviado com o valor da origem da URL de origem.
+origin-when-cross-origin: Comportamento semelhante a origin, mas permite enviar o cabeçalho Referer ao acessar recursos de origens cruzadas.
+unsafe-url: Indica que o cabeçalho Referer deve ser enviado com a URL completa da página de origem, independentemente da origem da URL.
+sandbox:
+O atributo sandbox cria um ambiente de execução isolado para o conteúdo de um iframe, restringindo certas ações potencialmente perigosas.
+Ele pode ser aplicado apenas a elementos <iframe>.
+Valores comuns para sandbox incluem:
+allow-same-origin: Permite que o conteúdo do iframe acesse recursos do mesmo domínio do documento pai.
+allow-forms: Permite que o conteúdo do iframe envie formulários.
+allow-scripts: Permite que o conteúdo do iframe execute scripts.
+allow-popups: Permite que o conteúdo do iframe abra pop-ups.
+allow-modals: Permite que o conteúdo do iframe abra modais.
+allow-orientation-lock: Permite que o conteúdo do iframe trave a orientação da tela.
+allow-pointer-lock: Permite que o conteúdo do iframe use o bloqueio de ponteiro.
+allow-presentation: Permite que o conteúdo do iframe inicie apresentações de tela inteira.
+allow-top-navigation: Permite que o conteúdo do iframe navegue para o nível superior.
+allow-top-navigation-by-user-activation: Permite que o conteúdo do iframe navegue para o nível superior somente após a ativação do usuário.
+Esses atributos são usados para melhorar a segurança ao carregar conteúdo externo em uma página web, restringindo certas funcionalidades que podem representar riscos de segurança.
 
 
 

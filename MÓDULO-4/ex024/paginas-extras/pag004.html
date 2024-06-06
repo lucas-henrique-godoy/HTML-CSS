@@ -1,0 +1,18 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Abertura da tag HTML com o atributo 'lang' definido como "pt-br" para português brasileiro -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a escala inicial da página para se ajustar ao tamanho da tela do dispositivo -->
+    <title>Formulário</title> <!-- Define o título da página -->
+</head>
+<body>
+    <h1>Cadastre-se aqui</h1> <!-- Título principal da página -->
+    <form action="cadastro.php" method="get"> <!-- Início do formulário HTML, com 'action' definido como "cadastro.php" para onde os dados serão enviados e 'method' definido como "get" para enviar os dados como parâmetros na URL -->
+        <p> <!-- Parágrafo que contém os campos do formulário -->
+            Nome: <!-- Rótulo do campo de entrada de texto -->
+            <input type="text" name="nome" id="nome"> <!-- Campo de entrada de texto para o nome do usuário. O atributo 'name' define o nome do parâmetro que será enviado junto com o valor inserido pelo usuário, e o atributo 'id' é usado para referenciar o elemento em scripts ou estilos -->
+            <input type="submit" value="Cadastrar"> <!-- Botão de envio do formulário -->
+        </p>
+    </form>
+</body>
+</html>
