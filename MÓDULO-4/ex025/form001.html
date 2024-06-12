@@ -1,0 +1,18 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang="pt-br"> <!-- Declaração do idioma da página -->
+<head>
+    <meta charset="UTF-8"> <!-- Declaração da codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração de visualização em dispositivos móveis -->
+    <title>Formulário</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1> <!-- Título principal da página -->
+    <form action="cadastro.php" autocomplete="off"> <!-- Formulário com ação para cadastro.php e desativação do autocomplete -->
+        <p><label for="inome">Nome:</label> <!-- Rótulo do campo de entrada para o nome -->
+            <input type="text" name="nome" id="inome"></p> <!-- Campo de entrada para o nome -->
+        <p><label for="isobrenome">Sobrenome:</label> <!-- Rótulo do campo de entrada para o sobrenome -->
+            <input type="text" name="sobrenome" id="isobrenome"></p> <!-- Campo de entrada para o sobrenome -->
+        <p><input type="submit" value="Enviar"></p> <!-- Botão de envio do formulário -->
+    </form>
+</body>
+</html>
