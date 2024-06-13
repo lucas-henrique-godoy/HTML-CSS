@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1> <!-- Título principal da página -->
-    <form action="cadastro.php" autocomplete="off"> <!-- Formulário com ação para cadastro.php e desativação do autocomplete -->
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- Formulário com ação para cadastro.php e desativação do autocomplete -->
         <p><label for="inome">Nome:</label> <!-- Rótulo do campo de entrada para o nome -->
             <input type="text" name="nome" id="inome"></p> <!-- Campo de entrada para o nome -->
         <p><label for="isobrenome">Sobrenome:</label> <!-- Rótulo do campo de entrada para o sobrenome -->
@@ -15,4 +15,10 @@
         <p><input type="submit" value="Enviar"></p> <!-- Botão de envio do formulário -->
     </form>
 </body>
+<!--
+Método GET: Os dados do formulário são anexados à URL como uma string de consulta. Visíveis na barra de endereços. Adequado para pequenas quantidades de dados e navegação bookmarkável, mas menos seguro para dados sensíveis.
+
+Método POST: Os dados do formulário são enviados no corpo da solicitação HTTP. Não são visíveis na URL. Adequado para enviar grandes quantidades de dados e para dados sensíveis, mais seguro do que GET.
+-->
+
 </html>

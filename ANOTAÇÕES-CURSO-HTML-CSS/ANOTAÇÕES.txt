@@ -431,6 +431,18 @@ allow-presentation: Permite que o conteúdo do iframe inicie apresentações de 
 allow-top-navigation: Permite que o conteúdo do iframe navegue para o nível superior.
 allow-top-navigation-by-user-activation: Permite que o conteúdo do iframe navegue para o nível superior somente após a ativação do usuário.
 Esses atributos são usados para melhorar a segurança ao carregar conteúdo externo em uma página web, restringindo certas funcionalidades que podem representar riscos de segurança.
+_______________________________________________________________________________________________________________________________________________________________________FORMULÁRIOS: 
+Em HTML5, os métodos GET e POST são usados para enviar dados de um formulário para um servidor.
+
+GET: Os dados do formulário são anexados à URL como uma string de consulta. São visíveis na barra de endereços do navegador. É útil para formulários que enviam pequenas quantidades de dados e para navegação bookmarkável. É limitado em tamanho de dados (geralmente cerca de 2000 caracteres) e menos seguro para dados sensíveis, pois os dados são visíveis na URL.
+
+POST: Os dados do formulário são enviados no corpo da solicitação HTTP. Os dados não são visíveis na URL. É adequado para enviar grandes quantidades de dados e para dados sensíveis, pois os dados não são expostos na URL. Não há limite de tamanho de dados. É comumente usado para enviar senhas e outras informações sensíveis. Mas se for inspecionado no devtools os dados apareceram.
+
+Em resumo, GET é usado para solicitações de dados não sensíveis e POST é usado para enviar dados sensíveis ou grandes quantidades de dados.
+
+
+
+
 
 
 
