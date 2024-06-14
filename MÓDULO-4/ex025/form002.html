@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a escala inicial e a largura do viewport para dispositivos móveis -->
+    <title></title> <!-- Define o título da página -->
 </head>
 <body>
-    <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="post">
+    <h1>Teste de Formulário</h1> <!-- Título principal da página -->
+    <form action="cadastro.php" method="post" autocomplete="on"> <!-- Formulário com ação para "cadastro.php" e método POST -->
         <p>
-            <label for="iusu">Usuário: </label>
-            <input type="text" name="isu" id="iusu" required>
+            <label for="iusu">Usuário: </label> <!-- Rótulo para o campo de usuário -->
+            <input type="text" name="isu" id="iusu" required minlength="5" maxlength="30" size="10" placeholder="nome do usuário" autocomplete="username"> <!-- Campo de entrada de texto para o nome do usuário -->
+            <!-- 
+                - name: nome do parâmetro enviado ao servidor
+                - id: identificador único para o campo
+                - required: indica que o campo é obrigatório
+                - minlength: define o mínimo de caracteres aceitos
+                - maxlength: define o máximo de caracteres aceitos
+                - size: define a largura do campo em caracteres
+                - placeholder: texto exibido quando o campo está vazio
+                - autocomplete: habilita o preenchimento automático do navegador (username)
+            -->
         </p>
         <p>
-            <label for="isen">Senha: </label>
-            <input type="password" name="isen" id="isen" required> 
+            <label for="isen">Senha: </label> <!-- Rótulo para o campo de senha -->
+            <input type="password" name="isen" id="isen" required minlength="8" maxlength="20" size="9" placeholder="mínimo 8 letras" autocomplete="current-password"> <!-- Campo de entrada de senha -->
+            <!-- 
+                - type: define o tipo de entrada como senha
+                - name: nome do parâmetro enviado ao servidor
+                - id: identificador único para o campo
+                - required: indica que o campo é obrigatório
+                - minlength: define o mínimo de caracteres aceitos
+                - maxlength: define o máximo de caracteres aceitos
+                - size: define a largura do campo em caracteres
+                - placeholder: texto exibido quando o campo está vazio
+                - autocomplete: habilita o preenchimento automático do navegador (current-password)
+            -->
         </p>
         <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+            <input type="reset" value="Limpar"> <!-- Botão de limpar o formulário -->
         </p>
     </form>
 </body>
