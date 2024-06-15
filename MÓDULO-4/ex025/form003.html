@@ -1,19 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <meta charset="UTF-8"> <!-- Define a codificação do documento como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title>Formulário</title> <!-- Título da página exibido na aba do navegador -->
 </head>
 <body>
-    <h1>Teste de Formulário</h1>
+    <h1>Teste de Formulário</h1> <!-- Título principal da página -->
+
+    <!-- Início do formulário -->
     <form action="cadastro.php" method="get" autocomplete="on">
+        <!-- Campo de entrada para o nome -->
         <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="name">
+            <label for="inome">Nome:</label> <!-- Rótulo associado ao campo de entrada do nome -->
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name" required>
+            <!-- Campo de texto para inserir o nome completo:
+                 - name="nome": Nome do parâmetro enviado para o servidor
+                 - id="inome": Identificador único do campo
+                 - required: Campo obrigatório
+                 - maxlength="30": Limite máximo de caracteres
+                 - placeholder="Nome completo": Texto de dica exibido antes de inserir o nome
+                 - autocomplete="name": Sugestão de preenchimento automático baseado no nome
+            -->
         </p>
+        
+        <!-- Campo de entrada para a média -->
         <p>
-            <input type="submit" value="">
+            <label for="imedia">Média: </label> <!-- Rótulo associado ao campo de entrada da média -->
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" value="5" step="0.1" required>
+            <!-- Campo numérico para inserir a média:
+                 - type="number": Tipo de campo numérico
+                 - name="media", id="imedia": Nome e identificador únicos do campo
+                 - min="0" max="10": Intervalo mínimo e máximo permitido
+                 - placeholder="0 a 10": Texto de dica exibido antes de inserir a média
+                 - value="5": Valor inicial padrão
+                 - step="0.1": Incremento para ajuste fino
+                 - required: Campo obrigatório
+            -->
+        </p>
+        
+        <!-- Campo de entrada para o período letivo -->
+        <p>
+            <label for="imes">Período Letivo:</label> <!-- Rótulo associado ao campo de entrada do período letivo -->
+            <input type="month" name="mes" id="imes" value="2024-06">
+            <!-- Campo para selecionar mês e ano do período letivo:
+                 - type="month": Tipo de campo para mês e ano
+                 - name="mes", id="imes": Nome e identificador únicos do campo
+                 - value="2024-06": Valor inicial definido para junho de 2024
+            -->
+        </p>
+        
+        <!-- Campo de entrada para o dia da prova -->
+        <p>
+            <label for="idia">Dia da Prova:</label> <!-- Rótulo associado ao campo de entrada do dia da prova -->
+            <input type="date" name="dia" id="idia" value="2024-06-14">
+            <!-- Campo para selecionar a data do dia da prova:
+                 - type="date": Tipo de campo para data
+                 - name="dia", id="idia": Nome e identificador únicos do campo
+                 - value="2024-06-14": Valor inicial definido para 14 de junho de 2024
+            -->
+        </p>
+        
+        <!-- Campo de entrada para o horário da prova -->
+        <p>
+            <label for="ihora">Horário da Prova:</label> <!-- Rótulo associado ao campo de entrada do horário da prova -->
+            <input type="time" name="hora" id="ihora">
+            <!-- Campo para selecionar o horário da prova:
+                 - type="time": Tipo de campo para hora
+                 - name="hora", id="ihora": Nome e identificador únicos do campo
+            -->
+        </p>
+        
+        <!-- Botões de ação -->
+        <p>
+            <input type="submit" value="Enviar"> <!-- Botão para enviar o formulário -->
+            <input type="reset" value="Limpar"> <!-- Botão para limpar todos os campos do formulário -->
         </p>
     </form>
 </body>
