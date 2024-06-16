@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para ajuste em dispositivos móveis -->
+    <title>Formulário</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1> <!-- Título principal da página -->
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- Formulário com action definido como "cadastro.php" e método "post".
+             O autocomplete está ativado para preenchimento automático de campos -->
+
+        <p>
+            <label for="icor">Cor: </label> <!-- Rótulo do campo de entrada de cor -->
+            <input type="color" name="cor" id="icor" value="#00ff00">
+            <!-- Campo de entrada de cor, com valor inicial definido como verde (#00ff00) -->
+        </p>
+
+        <p>
+            <label for="inivel">Nível de Satisfação: </label> <!-- Rótulo do controle de nível de satisfação -->
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+            <!-- Controle deslizante (range) para seleção de valor entre 1 e 5, valor inicial definido como 2 -->
+        </p>
+
+        <p>
+            <label for="ifoto">Foto do Perfil: </label> <!-- Rótulo do campo de entrada de arquivo (foto do perfil) -->
+            <input type="file" name="foto" id="ifoto">
+            <!-- Campo de entrada de arquivo (input file) para upload de foto do perfil -->
+            <!-- Nota: Para utilizar o input file, é necessário utilizar o método POST do formulário -->
+        </p>
+
+        <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+        <input type="reset" value="Limpar"> <!-- Botão para limpar/resetar o formulário -->
+    </form>
+</body>
+</html>
