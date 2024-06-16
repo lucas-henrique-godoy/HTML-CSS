@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <title>Document</title> <!-- Título da página, exibido na aba do navegador -->
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1> <!-- Título principal da página -->
+    <form action="cadastro.php" method="get" autocomplete="on"> <!-- Formulário com ação para cadastro.php usando método GET e autocomplete ativado -->
+        <fieldset>
+            <legend>Dados Pessoais</legend> <!-- Título do fieldset que agrupa os dados pessoais -->
+            <p>
+                <label for="inome">Nome: </label> <!-- Rótulo para o campo de entrada de nome -->
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required> <!-- Campo de texto para inserção do nome, com requisitos de mínimo, máximo e obrigatório -->
+            </p>
+            <p>
+                <label for="iemail">Email: </label> <!-- Rótulo para o campo de entrada de email -->
+                <input type="email" name="email" id="iemail" autocomplete="email" required> <!-- Campo de email, com autocomplete específico para email e obrigatório -->
+            </p>
+            <p>
+                <label for="itel">Telefone: </label> <!-- Rótulo para o campo de entrada de telefone -->
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx"> <!-- Campo de telefone, com autocomplete para telefone, padrão regex para formato específico e obrigatório, além de um placeholder -->
+            </p>
+            <!-- Estudar mais sobre RegEx -->
+            <p>
+                <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+                <input type="reset" value="Limpar"> <!-- Botão para limpar os campos do formulário -->
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
