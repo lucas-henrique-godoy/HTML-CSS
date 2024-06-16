@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+        <h1>Exemplo de Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sexo</legend>
+                <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label><br> <!--No input radio o correto é colocar os names iguais e diferenciar os id, para ser possível desmarcar uma opção.-->
+                <input type="radio" name="sexo" id="isxfem" value="F" checked> <label for="isxfem">Feminino</label> <!--O checked serve para deixar uma opção marcada por padrão quando o formulário for carregado, mas essa opção pode ser desmarcada, foi apenas um exemplo de uso do checked. Entretanto não podemos colcoar checked no input radio em mais de 1 opção.-->
+            </fieldset>
+
+            <fieldset>
+                <legend>Esportes favoritos</legend>
+                <input type="checkbox" name="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label><br> <!--Aqui há outro exemplo de uso do checked.-->
+                <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label><br> <!--Aqui há outro exemplo de uso do checked. No checkbox é possível colcoar checked e mais opções.-->
+                <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
+                <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label><br>
+            </fieldset>
+            
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+
+</body>
+</html>
