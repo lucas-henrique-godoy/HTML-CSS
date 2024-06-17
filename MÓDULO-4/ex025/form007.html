@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para ajuste em dispositivos móveis -->
+    <title>Formulário</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1> <!-- Título principal da página -->
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- Formulário com action definido como "cadastro.php" e método "post".
+             O autocomplete está ativado para preenchimento automático de campos -->
+
+        <p>
+            <label for="iest">Estado</label> <!-- Rótulo do campo de seleção de estado -->
+            <select name="estado" id="iest"> <!-- Campo de seleção de estado com id "iest" -->
+                <option value="" selected>--- Escolha ---</option> <!-- Opção inicial vazia com texto "--- Escolha ---" selecionada por padrão -->
+                <optgroup label="Região Sudeste"> <!-- Agrupamento de opções para a Região Sudeste -->
+                    <option value="MG">Minas Gerais</option> <!-- Opção para Minas Gerais -->
+                    <option value="RJ">Rio de Janeiro</option> <!-- Opção para Rio de Janeiro -->
+                    <option value="SP">São Paulo</option> <!-- Opção para São Paulo -->
+                </optgroup>
+
+                <optgroup label="Região Nordeste"> <!-- Agrupamento de opções para a Região Nordeste -->
+                    <option value="MA">Maranhão</option> <!-- Opção para Maranhão -->
+                    <option value="PE">Pernambuco</option> <!-- Opção para Pernambuco -->
+                    <option value="RN">Rio Grande do Norte</option> <!-- Opção para Rio Grande do Norte -->
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão: </label> <!-- Rótulo do campo de entrada de profissão -->
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <!-- Campo de entrada de texto para profissão, com sugestões de preenchimento -->
+            <datalist id="lstprof"> <!-- Lista de opções para sugestão de profissões -->
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br> <!-- Rótulo do campo de entrada de mensagem -->
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui!"></textarea>
+            <!-- Campo de entrada de texto multilinha para mensagem, com área de 30 colunas e 10 linhas de altura,
+                 e texto de placeholder para orientação ao usuário -->
+            <!-- Nota: Quando se utiliza <textarea>, é aconselhável utilizar o método POST no formulário para enviar os dados, pois o método GET possui um limite de tamanho de URL (cerca de 3 mil bytes) que pode não ser suficiente para mensagens extensas. -->
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+            <input type="reset" value="Limpar"> <!-- Botão para limpar ou resetar o formulário -->
+        </p>
+    </form>
+</body>
+</html>
