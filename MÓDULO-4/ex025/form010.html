@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para ajuste em dispositivos móveis -->
+    <title>Formulário</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1> <!-- Título principal da página -->
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!-- Formulário com action definido como "cadastro.php" e método "get".
+             O autocomplete está ativado para preenchimento automático de campos -->
+
+        <p>
+            <label for="iano">Em que ano você nasceu? </label> <!-- Rótulo associado ao campo de entrada de ano -->
+            <input type="number" name="ano" id="iano" min="1900" max="2024" 
+                   oninput="calcIdade()"> <!-- Campo de entrada de número (tipo number) para o ano de nascimento, limitado entre 1900 e 2024.
+                                             O atributo 'oninput' chama a função JavaScript calcIdade() toda vez que o valor é alterado. -->
+        </p>
+
+        <p>
+            <label for="iidade">Sua Idade é: </label> <!-- Rótulo associado ao elemento <output> -->
+            <output id="iidade">0</output> <!-- Elemento <output> inicializado com valor 0 para exibir a idade calculada -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+            <input type="reset" value="Limpar"> <!-- Botão para limpar ou resetar o formulário -->
+        </p>
+    </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear(); // Obtém o ano atual
+            iidade.innerHTML = atual - Number(iano.value); // Calcula a idade subtraindo o ano de nascimento do ano atual e atualiza o elemento <output> com id "iidade"
+        }
+    </script>
+</body>
+</html>

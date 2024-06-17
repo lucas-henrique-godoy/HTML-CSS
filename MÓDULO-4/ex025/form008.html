@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para ajuste em dispositivos móveis -->
+    <title>Formulário</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1> <!-- Título principal da página -->
+
+    <form action="cadstro.php" method="get" autocomplete="on">
+        <!-- Formulário com action definido como "cadstro.php" e método "get".
+             O autocomplete está ativado para preenchimento automático de campos -->
+
+        <p>
+            <label for="in1">Número 1: </label> <!-- Rótulo do campo de entrada do número 1 -->
+            <input type="number" name="n1" id="in1" min="0" max="50" required 
+                   oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!-- Campo de entrada de número (tipo number) para n1, limitado entre 0 e 50, e obrigatório.
+                 O atributo 'oninput' executa a função JavaScript para calcular a soma e atualizar o elemento <output> -->
+        </p>
+
+        <p>
+            <label for="in2">Número 2: </label> <!-- Rótulo do campo de entrada do número 2 -->
+            <input type="number" name="n2" id="in2" min="0" max="50" required 
+                   oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            <!-- Campo de entrada de número (tipo number) para n2, limitado entre 0 e 50, e obrigatório.
+                 O atributo 'oninput' executa a função JavaScript para calcular a soma e atualizar o elemento <output> -->
+        </p>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+            <!-- Elemento <output> para exibir a soma dos números inseridos. O valor inicial é 0.
+                 Este elemento <output> não envia dados ao servidor, apenas exibe o resultado na página.
+                 Quando o formulário é enviado, apenas os valores de n1 e n2 serão enviados, não a soma. -->
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+            <input type="reset" value="Limpar"> <!-- Botão para limpar ou resetar o formulário -->
+        </p>
+    </form>
+</body>
+</html>

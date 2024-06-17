@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para ajuste em dispositivos móveis -->
+    <title>Formulário</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1> <!-- Título principal da página -->
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!-- Formulário com action definido como "cadastro.php" e método "get".
+             O autocomplete está ativado para preenchimento automático de campos -->
+
+        <p>
+            <label for="inum">Número</label> <!-- Rótulo associado ao controle deslizante (range) -->
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" 
+                   oninput="ival.innerHTML = Number(inum.value)">
+            <!-- Controle deslizante (range) para seleção de números entre 0 e 10, com valor inicial 5.
+                 O atributo 'oninput' executa uma função JavaScript que atualiza o conteúdo do elemento <output> com id "ival"
+                 para mostrar o valor atual do controle deslizante. -->
+            <output id="ival">5</output> <!-- Elemento <output> inicializado com valor 5 -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+            <input type="reset" value="Limpar"> <!-- Botão para limpar ou resetar o formulário -->
+        </p>
+    </form>
+</body>
+</html>
