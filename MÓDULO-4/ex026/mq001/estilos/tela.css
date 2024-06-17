@@ -1,39 +1,39 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define o conjunto de caracteres como UTF-8 */
 
-/*Estilos para telas*/
+/* Estilos para telas */
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0px; /* Define margem zero para todos os elementos */
+    padding: 0px; /* Define padding zero para todos os elementos */
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes para o documento */
+    font-size: 1em; /* Define o tamanho da fonte base como 1 em */
 }
 
 header {
-    background-color: rgb(158, 158, 158);
+    background-color: rgb(158, 158, 158); /* Define a cor de fundo do cabeçalho */
 }
 
 header > h1 {
-    text-align: center;
+    text-align: center; /* Centraliza o texto do título h1 dentro do cabeçalho */
 }
 
 menu ul {
-    list-style-type: none;    
-    background-color: gray;
+    list-style-type: none; /* Remove os marcadores de lista (bullets) */
+    background-color: gray; /* Define a cor de fundo para o menu */
 }
 
 menu li {
-    background-color: rgb(75, 75, 75);
-    color: white;
-    display: inline-block;
-    padding: 10px;
+    background-color: rgb(75, 75, 75); /* Define a cor de fundo dos itens do menu */
+    color: white; /* Define a cor do texto dos itens do menu */
+    display: inline-block; /* Faz com que os itens do menu sejam exibidos em linha */
+    padding: 10px; /* Define o preenchimento interno dos itens do menu */
 }
 
 article {
-    width: 600px;
-    display: block; /*Centraliza o conteúdo*/
-    margin: auto;   /*Centraliza o conteúdo*/
+    width: 600px; /* Define a largura do elemento article */
+    display: block; /* Faz com que o elemento article se comporte como um bloco */
+    margin: auto; /* Centraliza o elemento article horizontalmente na tela */
 }

@@ -1,26 +1,26 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define o conjunto de caracteres como UTF-8 */
 
-/*Estilos para impressoras*/
+/* Estilos para impressoras */
 
 * {
-    margin: 10px;
-    padding: 10px;
+    margin: 10px; /* Define margem de 10 pixels para todos os elementos */
+    padding: 10px; /* Define padding de 10 pixels para todos os elementos */
 }
 
 html {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-family: 'Courier New', Courier, monospace; /* Define a família de fontes para todo o documento */
+    font-size: 1.5em; /* Define o tamanho da fonte como 1.5 em */
+    line-height: 1.5em; /* Define a altura da linha como 1.5 em */
 }
 
 menu {
-    display: none; /*Na versão de impresora, o menu é escondido.*/
+    display: none; /* Na versão de impressora, oculta o elemento menu */
 }
 
 article {
-    width: 100%;
+    width: 100%; /* Define a largura do elemento article como 100% */
 }
 
 article::after {
-    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com'; /* Adiciona um conteúdo após o elemento article */
 }
