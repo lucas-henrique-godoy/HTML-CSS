@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /*Declarações gerais*/
+            * {
+                margin: 0px;
+                padding: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            html, body {
+                width: 100vw;
+                height: 100vh;
+                background-color: #233eff;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            h1 {
+                color:white;
+                text-shadow: 2px 2px 0px #1526a7;
+                padding: 10px;
+            }
+            
+
+        /*Declarações retrato*/
+            @media screen and (orientation: portrait) {
+                body {
+                    background-image: url(../imagens/cev-portrait.jpg); /*Carrega a imagem em pé.*/
+                    background-position: center bottom;
+                } 
+            }
+
+
+        /*Declarações paisagem*/
+            @media screen and (orientation: landscape) {
+                body {
+                    background-image: url(../imagens/cev-landscape.jpg); /*Carrega a imagem deitada.*/
+                    background-position: left bottom;
+                }
+            }
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação do seu dispositivo</h1>
+</body>
+<!--Quado se usa MEDIA eu posso informar media types e media features. Media types não tem parênteses. Meida features tem parênteses. -->
+</html>
