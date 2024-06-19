@@ -1,48 +1,49 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define a codificação de caracteres do CSS como UTF-8 */
 
-/*Versão Mobile First*/
+/* Versão Mobile First */
+/* Comentário sobre a estratégia de design responsivo (Mobile First) */
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes para todos os elementos */
+    font-size: 1em; /* Define o tamanho de fonte para todos os elementos */
+    margin: 0px; /* Remove margens padrão */
+    padding: 0px; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Define a caixa de modelo border-box para incluir padding e border no tamanho total */
 }
 
 html {
-    height: 100vh;
+    height: 100vh; /* Define a altura do elemento HTML para 100% da altura da viewport */
 }
 
 body {
-    background: black url(../imagens/back-phone.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: black url(../imagens/back-phone.jpg) no-repeat; /* Define um plano de fundo preto com uma imagem de fundo para dispositivos móveis */
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir toda a área disponível */
+    background-position: center center; /* Centraliza a imagem de fundo na tela */
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.842);
-    width: 400px;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.842); /* Define a cor de fundo para o elemento main com um pouco de transparência */
+    width: 400px; /* Define a largura do elemento main */
+    margin: auto; /* Centraliza o elemento main horizontalmente */
+    margin-top: 20px; /* Define uma margem superior de 20 pixels */
+    border-radius: 10px; /* Adiciona um raio de borda de 10 pixels para cantos arredondados */
+    padding: 10px; /* Define um preenchimento interno de 10 pixels */
 }
 
 h1 {
-    text-align: center;
-    color: white;
-    font-size: 2em;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+    text-align: center; /* Centraliza o texto do cabeçalho h1 */
+    color: white; /* Define a cor do texto como branco */
+    font-size: 2em; /* Define o tamanho da fonte do cabeçalho h1 */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493); /* Adiciona sombreamento ao texto do cabeçalho */
 }
 
 img {
-    display: block;
-    margin: auto;
+    display: block; /* Define as imagens como elementos de bloco */
+    margin: auto; /* Centraliza as imagens horizontalmente */
 }
 
-img#phone {display: block;}
-img#tablet {display: none;}
-img#print {display: none;}
-img#pc {display: none;}
-img#tv {display: none;}
+img#phone { display: block; } /* Define a imagem com ID "phone" para ser exibida como bloco */
+img#tablet { display: none; } /* Esconde a imagem com ID "tablet" */
+img#print { display: none; } /* Esconde a imagem com ID "print" */
+img#pc { display: none; } /* Esconde a imagem com ID "pc" */
+img#tv { display: none; } /* Esconde a imagem com ID "tv" */
