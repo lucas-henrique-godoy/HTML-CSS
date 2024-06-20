@@ -34,8 +34,10 @@ ________________________________________________________________________________
 -Site paa pegar emojis: https://emojipedia.org/
 _______________________________________________________________________________________________________________________________________________________________________
 -Site para gerar qr code: https://www.qr-code-generator.com/
-_________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________________________________
 -Site para procurar pagina e usuários no github: https://github.com/explore
+_______________________________________________________________________________________________________________________________________________________________________
+-Site para utilizar ícones como o do menu hamburguer: https://fonts.google.com/icons?icon.set=Material+Icons
 
 FORMATOS DE IMAGEM: Em sites usar imagens de tamanho máximo 1500 pixels. Normalmente uma imagem num site tem tamanho de 600 pixels.
 JPEG e PNG são dois formatos de imagem populares com diferenças essenciais:
@@ -497,6 +499,7 @@ Utilize consultas de mídia CSS para garantir que o design se ajuste dinamicamen
 Teste regularmente em dispositivos móveis reais para verificar a funcionalidade e a aparência do site.
 Considere as limitações de desempenho e conectividade ao otimizar imagens e recursos.
 Em resumo, o Mobile First não é apenas uma estratégia de design, mas uma filosofia que visa criar experiências de usuário acessíveis e eficazes para todos, independentemente do dispositivo utilizado para acessar a web.
+_______________________________________________________________________________________________________________________________________________________________________
 
 
 
