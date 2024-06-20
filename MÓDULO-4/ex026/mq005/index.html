@@ -4,42 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query- Menu Responsivo</title>
-    <!--Linha que possibilita utilizar um ícone do Google Fonts ↓ -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link rel="stylesheet" href="estilos/style.css">
-    
+    <!-- Linha que possibilita utilizar um ícone do Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css"> <!-- Importa um arquivo CSS externo -->
 </head>
 <body>
     <header>
-        <h1>Meu Site</h1>
-        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span> <!--Importando o ícone chamado "menu", que é de um menu hamburguer do Google Fonts-->
+        <h1>Meu Site</h1> <!-- Título principal do site -->
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <!--
+            Importando o ícone "menu" do Google Fonts usando a classe "material-icons".
+            O ícone será exibido como um ícone de menu hamburguer.
+            O evento onclick chama a função JavaScript clickMenu() quando o ícone é clicado.
+        -->
         <menu id="itens">
             <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Opção 1</a></li> <!-- Link de navegação para a Opção 1 -->
+                <li><a href="#">Opção 2</a></li> <!-- Link de navegação para a Opção 2 -->
+                <li><a href="#">Opção 3</a></li> <!-- Link de navegação para a Opção 3 -->
+                <li><a href="#">Opção 4</a></li> <!-- Link de navegação para a Opção 4 -->
+                <li><a href="#">Opção 5</a></li> <!-- Link de navegação para a Opção 5 -->
             </ul>
         </menu>
     </header>
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ea consequuntur adipisci error dolores mollitia fugiat vitae ducimus! Provident velit eum voluptatem reprehenderit facilis nisi dolor ipsa nam quas molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id alias mollitia, deserunt neque deleniti itaque ad facilis perferendis rem voluptates aperiam nobis impedit laudantium. Quasi maiores veritatis unde earum eum!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ea consequuntur adipisci error dolores mollitia fugiat vitae ducimus! Provident velit eum voluptatem reprehenderit facilis nisi dolor ipsa nam quas molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id alias mollitia, deserunt neque deleniti itaque ad facilis perferendis rem voluptates aperiam nobis impedit laudantium. Quasi maiores veritatis unde earum eum!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ea consequuntur adipisci error dolores mollitia fugiat vitae ducimus! Provident velit eum voluptatem reprehenderit facilis nisi dolor ipsa nam quas molestias? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id alias mollitia, deserunt neque deleniti itaque ad facilis perferendis rem voluptates aperiam nobis impedit laudantium. Quasi maiores veritatis unde earum eum!</p>
+            <!-- Título secundário do artigo -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe ea consequuntur adipisci error dolores mollitia fugiat vitae ducimus!
+                Provident velit eum voluptatem reprehenderit facilis nisi dolor ipsa nam quas molestias?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Id alias mollitia, deserunt neque deleniti itaque ad facilis perferendis rem voluptates aperiam nobis impedit laudantium.
+                Quasi maiores veritatis unde earum eum!
+            </p>
+            <!-- Parágrafo de texto no artigo -->
+            <!-- Repetido para demonstração -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe ea consequuntur adipisci error dolores mollitia fugiat vitae ducimus!
+                Provident velit eum voluptatem reprehenderit facilis nisi dolor ipsa nam quas molestias?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Id alias mollitia, deserunt neque deleniti itaque ad facilis perferendis rem voluptates aperiam nobis impedit laudantium.
+                Quasi maiores veritatis unde earum eum!
+            </p>
+            <!-- Parágrafo de texto no artigo -->
+            <!-- Repetido para demonstração -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Saepe ea consequuntur adipisci error dolores mollitia fugiat vitae ducimus!
+                Provident velit eum voluptatem reprehenderit facilis nisi dolor ipsa nam quas molestias?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Id alias mollitia, deserunt neque deleniti itaque ad facilis perferendis rem voluptates aperiam nobis impedit laudantium.
+                Quasi maiores veritatis unde earum eum!
+            </p>
+            <!-- Parágrafo de texto no artigo -->
         </article>
     </main>
     <script>
         function clickMenu() {
+            var itens = document.getElementById('itens');
             if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            }else {
-                itens.style.display = 'block'
+                itens.style.display = 'none';
+            } else {
+                itens.style.display = 'block';
             }
         }
+        /*
+            Função JavaScript clickMenu():
+            - Obtém o elemento com o id 'itens' (o menu).
+            - Verifica se o estilo de exibição atual do menu é 'block'.
+            - Alterna entre exibir ('block') e ocultar ('none') o menu quando o ícone de menu é clicado.
+            *OBS: Em Javascript o sinal de = significa recebe.
+             O sinal == significa "igual a".
+        */
     </script>
 </body>
 </html>
