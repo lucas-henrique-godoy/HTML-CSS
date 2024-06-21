@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200px    
+*/
+
+/* ↓↓↓↓↓  Aplica regras de estilo apenas quando a largura mínima da tela é 768px  */
+@media screen and (min-width: 768px) { 
+    span#burguer {
+        display: none;  /* Esconde o elemento span com id "burguer" */
+    }
+
+    menu {
+        display: block; /* Mostra o elemento menu */
+    }
+
+    menu > ul > li {
+        display: inline-block; /*Coloca as opções do menu uma ao lado da outra*/
+    }
+}
