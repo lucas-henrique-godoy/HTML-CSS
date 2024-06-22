@@ -22,4 +22,9 @@ Grandes telas: acima de 1200px
     menu > ul > li {
         display: inline-block; /*Coloca as opções do menu uma ao lado da outra*/
     }
+
+    main {
+        width: 768px;  /*Quando a tela for muito grande, o conteúdo  fica travado no tamanho de 768px, para facilitar a leitura do usuário*/
+    }
 }
+

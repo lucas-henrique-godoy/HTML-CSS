@@ -1,80 +1,91 @@
-/*Versão Mobile First*/
+/* Versão Mobile First */
+
+/* Define o conjunto de caracteres UTF-8 */
 @charset "UTF-8";
 
+/* Define estilos padrão para todos os elementos */
 * {
-    font-family: Arial, Helvetica, sans-serif; 
-    margin: 0px;
-    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte */
+    margin: 0px; /* Remove margens padrão */
+    padding: 0px; /* Remove preenchimentos padrão */
 }
 
+/* Estilos para o corpo (body) e o documento HTML (html) */
 body, html {
-    background-color: lightgray;
+    background-color: lightgray; /* Define a cor de fundo */
 }
 
+/* Estilos para o cabeçalho (header) */
 header {
-    background-color: rgb(148, 148, 148);
+    background-color: rgb(148, 148, 148); /* Define a cor de fundo */
 }
 
+/* Estilos para o título h1 dentro do cabeçalho */
 header > h1 {
-    padding: 10px;
-    text-align: center;
+    padding: 10px; /* Adiciona preenchimento interno */
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Estilos para o elemento span com id 'burguer' (provavelmente um ícone de menu) */
 span#burguer {
-    background-color: rgb(48, 48, 48);
-    color: white;
-    display: block;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
+    background-color: rgb(48, 48, 48); /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    display: block; /* Define como bloco para ocupar largura total */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Adiciona preenchimento interno */
+    cursor: pointer; /* Transforma o cursor em ponteiro ao passar por cima */
 }
 
+/* Estilos de hover para o span com id 'burguer' */
 span#burguer:hover {
-    background-color: white;
-    color: black;    
+    background-color: white; /* Altera a cor de fundo ao passar o mouse */
+    color: black; /* Altera a cor do texto ao passar o mouse */
 }
 
+/* Estilos para o elemento menu (provavelmente um menu de navegação) */
 menu {
-    display: none;
+    display: none; /* Inicialmente oculta o menu */
 }
 
+/* Estilos para a lista ul dentro do menu */
 menu > ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove os marcadores de lista */
 }
 
+/* Estilos para os itens de lista a dentro da lista ul dentro do menu */
 menu > ul > li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    background-color: rgb(87, 87, 87);
-    color: white;
-    border-top: 2px solid gray;
+    display: block; /* Define como bloco para ocupar largura total */
+    padding: 10px; /* Adiciona preenchimento interno */
+    text-decoration: none; /* Remove decoração de link */
+    text-align: center; /* Centraliza o texto */
+    background-color: rgb(87, 87, 87); /* Define a cor de fundo */
+    color: white; /* Define a cor do texto */
+    border-top: 2px solid gray; /* Adiciona uma borda superior */
 }
 
+/* Estilos de hover para os itens de lista a */
 menu > ul > li > a:hover {
-    background-color: gray;
+    background-color: gray; /* Altera a cor de fundo ao passar o mouse */
 }
 
+/* Estilos para o elemento main (provavelmente a seção principal do conteúdo) */
 main {
-    width: 90vw;
-    background-color: white;
-    margin: auto; /*Centraliza o main*/
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 10px;    
+    width: 90vw; /* Define a largura em viewport width */
+    background-color: white; /* Define a cor de fundo */
+    margin: auto; /* Centraliza o elemento(main) horizontalmente */
+    margin-top: 10px; /* Adiciona margem superior */
+    padding: 10px; /* Adiciona preenchimento interno */
+    border-radius: 10px; /* Adiciona borda arredondada */
 }
 
+/* Estilos para o título h2 dentro do artigo */
 article > h2 {
-    padding-bottom: 20px;
+    padding-bottom: 20px; /* Adiciona preenchimento inferior */
 }
 
+/* Estilos para os parágrafos p dentro do artigo */
 article > p {
-    text-align: justify;
-    margin-bottom: 20px;
-    text-indent: 20px;
+    text-align: justify; /* Justifica o texto */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+    text-indent: 20px; /* Adiciona recuo na primeira linha */
 }
-
-
-
-
