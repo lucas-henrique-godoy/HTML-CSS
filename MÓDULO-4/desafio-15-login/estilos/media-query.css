@@ -1,0 +1,63 @@
+@charset "UTF-8"; /* Declaração do conjunto de caracteres */
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Media query para configuração de tablet */
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82); /* Gradiente de fundo para tablets */
+    }
+
+    section#login {
+        width: 80vw; /* Largura da seção de login em viewport width */
+        height: 280px; /* Altura da seção de login */
+    }
+
+    section#login > div#imagem {
+        float: left; /* Flutua para a esquerda */
+        width: 30%; /* Largura da div de imagem */
+        height: 100%; /* Altura da div de imagem */
+    }
+
+    section#login > div#formulario {
+        float: right; /* Flutua para a direita */
+        width: 70%; /* Largura da div de formulário */
+    }
+}
+
+@media screen and (min-width: 992px) { /* Media query para configuração de desktop */
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82); /* Gradiente de fundo para desktop */
+    }
+
+    section#login {
+        width: 950px; /* Largura fixa da seção de login */
+        height: 350px; /* Altura da seção de login */
+    }
+
+    section#login > div#imagem {
+        float: right; /* Flutua para a direita */
+        width: 50%; /* Largura da div de imagem */
+        height: 100%; /* Altura da div de imagem */
+    }
+
+    section#login > div#formulario {
+        float: left; /* Flutua para a esquerda */
+        width: 50%; /* Largura da div de formulário */
+    }
+
+    div#formulario > h1 {
+        font-size: 2em; /* Tamanho da fonte do título do formulário */
+    }
+
+    div#formulario > p {
+        font-size: 1em; /* Tamanho da fonte do parágrafo */
+        margin: 20px 0px; /* Margem superior e inferior do parágrafo */
+    }
+}

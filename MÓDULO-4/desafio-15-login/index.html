@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang="pt-br"> <!-- Abertura da tag HTML com atributo de linguagem -->
+<head>
+    <meta charset="UTF-8"> <!-- Meta tag para especificar o conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag para responsividade -->
+    <title>Login</title> <!-- Título da página -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Link para importar ícones do Google Fonts -->
+    <link rel="stylesheet" href="estilos/style.css"> <!-- Link para importar o arquivo CSS de estilos -->
+    <link rel="stylesheet" href="estilos/media-query.css"> <!-- Link para importar o arquivo CSS de media queries -->
+</head>
+<body>
+    <main>
+        <section id="login"> <!-- Início da seção de login -->
+            <div id="imagem">
+                <!-- Aqui vai a imagem no CSS --> <!-- Div reservada para imagem (será definida no CSS) -->
+            </div>
+            <div id="formulario">
+                <h1>Login</h1> <!-- Título principal da seção de login -->
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p> <!-- Parágrafo de boas-vindas -->
+                <form action="login.php" method="post" autocomplete="on"> <!-- Formulário de login -->
+                    <div class="campo">
+                        <span class="material-icons">person</span> <!-- Ícone de usuário -->
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                        <!-- Campo de e-mail para login -->
+                        <label for="ilogin">Login</label> <!-- Rótulo para o campo de e-mail -->
+                    </div>
+                    <div class="campo"> 
+                        <span class="material-icons">vpn_key</span> <!-- Ícone de chave (senha) -->
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <!-- Campo de senha -->
+                        <label for="isenha">senha</label> <!-- Rótulo para o campo de senha -->
+                    </div>
+                    <input type="submit" value="Entrar"> <!-- Botão de submissão do formulário -->
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha <span class="material-icons">mail</span> <!-- Link para página de recuperação de senha com ícone de e-mail -->
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

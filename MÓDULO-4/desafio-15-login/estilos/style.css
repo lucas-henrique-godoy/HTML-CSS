@@ -1,0 +1,139 @@
+/* VERSÃO MOBILE FIRST */
+@charset "UTF-8"; /* Declaração do conjunto de caracteres */
+
+/*
+    Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Define a família de fontes para todo o documento */
+    padding: 0px; /* Remove o padding padrão */
+    margin: 0px; /* Remove a margem padrão */
+    box-sizing: border-box; /* Garante que padding e border sejam contabilizados no tamanho total do elemento */
+}
+
+body, html {
+    background-color: #5f2c82; /* Cor de fundo para o corpo do documento e a página HTML */
+    height: 100vh; /* Altura total da viewport */
+    width: 100vw; /* Largura total da viewport */
+}
+
+main {
+    position: relative; /* Posição relativa para os filhos posicionados absolutamente */
+    height: 100vh; /* Altura total da viewport */
+    width: 100vw; /* Largura total da viewport */
+}
+
+section#login {
+    position: absolute; /* Posição absoluta em relação ao pai mais próximo com posição definida */
+    top: 50%; /* Alinha o topo do elemento ao centro vertical */
+    left: 50%; /* Alinha a esquerda do elemento ao centro horizontal */
+    overflow: hidden; /* Oculta conteúdo que transborda do elemento */
+    background-color: white; /* Cor de fundo branca para a seção de login */
+    width: 250px; /* Largura fixa da seção de login */
+    height: 515px; /* Altura fixa da seção de login */
+    border-radius: 20px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450); /* Sombra */
+    transform: translate(-50%, -50%); /* Centraliza o elemento horizontal e verticalmente */
+    transition: width .3s, height 0.3s; /* Transição suave de largura e altura */
+    transition-timing-function: ease; /* Função de temporização da transição */
+}
+
+section#login > div#imagem {
+    display: block; /* Exibe como bloco */
+    background: #5f2c82 url(../imagens/metal.jpg) no-repeat; /* Fundo com imagem */
+    background-size: cover; /* Cobrir todo o espaço do elemento */
+    background-position: left bottom; /* Posição da imagem */
+    height: 200px; /* Altura fixa para a área de imagem */
+}
+
+section#login > div#formulario {
+    display: block; /* Exibe como bloco */
+    padding: 10px; /* Espaçamento interno */
+}
+
+div#formulario > h1 {
+    text-align: center; /* Alinhamento central do texto */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+div#formulario > p {
+    font-size: 0.8em; /* Tamanho da fonte menor */
+}
+
+form > div.campo {
+    background-color: #5f2c82; /* Cor de fundo do campo */
+    border: 2px solid #5f2c82; /* Borda do campo */
+    display: block; /* Exibe como bloco */
+    width: 100%; /* Largura total do elemento pai */
+    height: 40px; /* Altura fixa do campo */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 5px 0px; /* Margem superior e inferior */
+}
+
+div.campo > label {
+    display: none; /* Esconde rótulo por padrão */
+}
+
+div.campo > span {
+    color: white; /* Cor do ícone */
+    font-size: 1.9em; /* Tamanho do ícone */
+    width: 40px; /* Largura do ícone */
+    padding: 5px; /* Espaçamento interno */
+}
+
+div.campo > input {
+    background-color: #94cfcd; /* Cor de fundo do campo de entrada */
+    font-size: 1em; /* Tamanho da fonte */
+    width: calc(100% - 45px); /* Largura do campo de entrada, considerando o espaço para o ícone */
+    height: 100%; /* Altura total do campo */
+    border: 0px; /* Remove borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 4px; /* Espaçamento interno */
+    transform: translateY(-10px); /* Ajuste de posição vertical */
+}
+
+div.campo > input:focus-within {
+    background-color: white; /* Cor de fundo ao focar no campo */
+}
+
+form > input[type=submit] {
+    display: block; /* Exibe como bloco */
+    font-size: 1em; /* Tamanho da fonte */
+    width: 100%; /* Largura total */
+    height: 40px; /* Altura fixa do botão */
+    background-color: #53aaa7; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor do mouse */
+}
+
+form > input[type=submit]:hover {
+    background-color: #2d6462; /* Cor de fundo ao passar o mouse */
+}
+
+form > a.botao {
+    display: block; /* Exibe como bloco */
+    text-align: center; /* Alinhamento central do texto */
+    font-size: 1em; /* Tamanho da fonte */
+    width: 100%; /* Largura total */
+    height: 40px; /* Altura fixa do botão */
+    padding-top: 5px; /* Espaçamento interno superior */
+    margin-top: 5px; /* Margem superior */
+    background-color: white; /* Cor de fundo */
+    color: #2d6462 ; /* Cor do texto */
+    border: 1px solid #49a09d; /* Borda */
+    border-radius: 7px; /* Bordas arredondadas */
+    text-decoration: none; /* Sem decoração de texto */
+}
+
+form > a.botao:hover {
+    background-color: #6cd3cf; /* Cor de fundo ao passar o mouse */
+}
+
+form > a.botao > span {
+    font-size: 0.8em; /* Tamanho da fonte do ícone dentro do botão */
+}
