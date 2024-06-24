@@ -521,7 +521,7 @@ align-items: Alinha os itens flexíveis ao longo do eixo cruzado dentro do cont�
 align-content: Controla o espaçamento entre as linhas no eixo cruzado, se houver várias linhas de itens (flex-start, flex-end, center, space-between, space-around, stretch).
 _______________________________________________________________________________________________________________________________________________________________________
 
-6- Propriedades dos Itens Flexíveis(Elemntos Filho):
+6- Propriedades dos Itens Flexíveis(Elementos Filho):
 
 order: Define a ordem dos itens flexíveis dentro do contêiner flex.
 flex-grow: Especifica quanto um item flexível pode crescer em relação aos outros itens flexíveis.
@@ -530,4 +530,5 @@ flex-basis: Especifica o tamanho inicial de um item flexível antes que ele come
 Flexbox oferece uma maneira poderosa e intuitiva de criar layouts responsivos e dinâmicos em CSS, permitindo que você ajuste facilmente o alinhamento, o espaçamento e a ordem dos elementos dentro de um contêiner flexível. É amplamente suportado pelos navegadores modernos e é uma técnica essencial para o design web moderno.
 
 *OBS: A propriedade diplay:flex; somente é colocada no flex-contêiner(elemento pai), e nunca nos flex-items(elementos filhos).
+_______________________________________________________________________________________________________________________________________________________________________
 
