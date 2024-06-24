@@ -511,16 +511,17 @@ FLEXBOX: Flexbox (Flexible Box) é um modelo de layout em CSS projetado para fac
 
 4- Eixo Cruzado (Cross Axis): É a direção perpendicular à direção principal. Por padrão, é perpendicular ao eixo principal. Por exemplo, se o eixo principal for horizontal, o eixo cruzado será vertical.
 
-5- Propriedades do Contêiner Flex:
+5- Propriedades do Contêiner Flex(Elemento Pai):
 
 display: Define se o contêiner é um contêiner flex (flex) ou um contêiner flex embutido (inline-flex).
-flex-direction: Define a direção principal dos itens flexíveis (row, row-reverse, column, column-reverse).
+flex-direction: Define a direção principal dos itens flexíveis (row(os itens ficam deitados da esquerda para a direita), row-reverse(os itens ficam deitados da direita para a esquerda), column( os itens ficam em pé de cima para baixo), column-reverse(os itens ficam em pé de baixo para cima)).
 flex-wrap: Especifica se os itens flexíveis devem quebrar para uma nova linha ou coluna quando não houver mais espaço (nowrap, wrap, wrap-reverse).
 justify-content: Alinha os itens flexíveis ao longo do eixo principal (flex-start, flex-end, center, space-between, space-around).
 align-items: Alinha os itens flexíveis ao longo do eixo cruzado dentro do contêiner (flex-start, flex-end, center, baseline, stretch).
 align-content: Controla o espaçamento entre as linhas no eixo cruzado, se houver várias linhas de itens (flex-start, flex-end, center, space-between, space-around, stretch).
+_______________________________________________________________________________________________________________________________________________________________________
 
-6- Propriedades dos Itens Flexíveis:
+6- Propriedades dos Itens Flexíveis(Elemntos Filho):
 
 order: Define a ordem dos itens flexíveis dentro do contêiner flex.
 flex-grow: Especifica quanto um item flexível pode crescer em relação aos outros itens flexíveis.
