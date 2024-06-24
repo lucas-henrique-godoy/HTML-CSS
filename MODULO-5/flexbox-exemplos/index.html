@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilo para o container flexível */
+        .container {
+            display: flex; /* Define o container como flexível */
+            border: 2px solid #333; /* Adiciona uma borda para visualização */
+            padding: 10px; /* Adiciona um espaçamento interno */
+        }
+
+        /* Estilo para o container com flex-direction: row */
+        .row {
+            flex-direction: row; /* Itens são dispostos em linha (horizontalmente) */
+        }
+
+        /* Estilo para o container com flex-direction: row-reverse */
+        .row-reverse {
+            flex-direction: row-reverse; /* Itens são dispostos em linha reversa (horizontalmente) */
+        }
+
+        /* Estilo para o container com flex-direction: column */
+        .column {
+            flex-direction: column; /* Itens são dispostos em coluna (verticalmente) */
+        }
+
+        /* Estilo para o container com flex-direction: column-reverse */
+        .column-reverse {
+            flex-direction: column-reverse; /* Itens são dispostos em coluna reversa (verticalmente) */
+        }
+
+        /* Estilo para os itens dentro do container */
+        .item {
+            width: 50px; /* Largura dos itens */
+            height: 50px; /* Altura dos itens */
+            margin: 10px; /* Margem entre os itens */
+            background-color: lightblue; /* Cor de fundo dos itens */
+        }
+    </style>
+    <title>Main Axis e Cross Axis</title>
+</head>
+<body>
+    <!-- Exemplo com flex-direction: row -->
+    <div class="container row">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <!-- Exemplo com flex-direction: row-reverse -->
+    <div class="container row-reverse">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <!-- Exemplo com flex-direction: column -->
+    <div class="container column">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <!-- Exemplo com flex-direction: column-reverse -->
+    <div class="container column-reverse">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
+
