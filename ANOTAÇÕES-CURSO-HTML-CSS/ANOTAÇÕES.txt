@@ -501,7 +501,32 @@ Considere as limitações de desempenho e conectividade ao otimizar imagens e re
 Em resumo, o Mobile First não é apenas uma estratégia de design, mas uma filosofia que visa criar experiências de usuário acessíveis e eficazes para todos, independentemente do dispositivo utilizado para acessar a web.
 _______________________________________________________________________________________________________________________________________________________________________
 
+FLEXBOX: Flexbox (Flexible Box) é um modelo de layout em CSS projetado para facilitar o posicionamento e a organização de elementos em um contêiner de forma mais eficiente e responsiva. Aqui estão os conceitos básicos de Flexbox de maneira simplificada:
 
+1- Contêiner Flex (Flex Container): É o elemento pai que envolve os itens flexíveis. Para definir um contêiner flex, você aplica display: flex; ou display: inline-flex; ao elemento pai.
 
+2- Itens Flexíveis (Flex Items): São os elementos filhos diretos dentro do contêiner flex. Esses itens podem ser organizados e alinhados de várias maneiras dentro do contêiner.
 
+3- Eixo Principal (Main Axis): É a direção principal ao longo da qual os itens flexíveis são posicionados no contêiner flex. Pode ser horizontal (por padrão) ou vertical, dependendo da orientação do contêiner.
+
+4- Eixo Cruzado (Cross Axis): É a direção perpendicular à direção principal. Por padrão, é perpendicular ao eixo principal. Por exemplo, se o eixo principal for horizontal, o eixo cruzado será vertical.
+
+5- Propriedades do Contêiner Flex:
+
+display: Define se o contêiner é um contêiner flex (flex) ou um contêiner flex embutido (inline-flex).
+flex-direction: Define a direção principal dos itens flexíveis (row, row-reverse, column, column-reverse).
+flex-wrap: Especifica se os itens flexíveis devem quebrar para uma nova linha ou coluna quando não houver mais espaço (nowrap, wrap, wrap-reverse).
+justify-content: Alinha os itens flexíveis ao longo do eixo principal (flex-start, flex-end, center, space-between, space-around).
+align-items: Alinha os itens flexíveis ao longo do eixo cruzado dentro do contêiner (flex-start, flex-end, center, baseline, stretch).
+align-content: Controla o espaçamento entre as linhas no eixo cruzado, se houver várias linhas de itens (flex-start, flex-end, center, space-between, space-around, stretch).
+
+6- Propriedades dos Itens Flexíveis:
+
+order: Define a ordem dos itens flexíveis dentro do contêiner flex.
+flex-grow: Especifica quanto um item flexível pode crescer em relação aos outros itens flexíveis.
+flex-shrink: Especifica quanto um item flexível pode encolher em relação aos outros itens flexíveis.
+flex-basis: Especifica o tamanho inicial de um item flexível antes que ele comece a crescer ou encolher.
+Flexbox oferece uma maneira poderosa e intuitiva de criar layouts responsivos e dinâmicos em CSS, permitindo que você ajuste facilmente o alinhamento, o espaçamento e a ordem dos elementos dentro de um contêiner flexível. É amplamente suportado pelos navegadores modernos e é uma técnica essencial para o design web moderno.
+
+*OBS: A propriedade diplay:flex; somente é colocada no flex-contêiner(elemento pai), e nunca nos flex-items(elementos filhos).
 
