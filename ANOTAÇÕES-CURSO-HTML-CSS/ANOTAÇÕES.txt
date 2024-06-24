@@ -532,3 +532,28 @@ Flexbox oferece uma maneira poderosa e intuitiva de criar layouts responsivos e 
 *OBS: A propriedade diplay:flex; somente é colocada no flex-contêiner(elemento pai), e nunca nos flex-items(elementos filhos).
 _______________________________________________________________________________________________________________________________________________________________________
 
+1. Eixo Principal (Main Axis)
+O main axis é o eixo ao longo do qual os itens flexíveis são dispostos dentro do container flexível. A direção do main axis é determinada pela propriedade flex-direction.
+
+Para flex-direction: row; (padrão):
+
+Main Axis: Horizontal da esquerda para a direita.
+Cross Axis: Vertical de cima para baixo.
+Para flex-direction: row-reverse;:
+
+Main Axis: Horizontal da direita para a esquerda.
+Cross Axis: Vertical de cima para baixo.
+Para flex-direction: column;:
+
+Main Axis: Vertical de cima para baixo.
+Cross Axis: Horizontal da esquerda para a direita.
+Para flex-direction: column-reverse;:
+
+Main Axis: Vertical de baixo para cima.
+Cross Axis: Horizontal da esquerda para a direita.
+2. Eixo Transversal (Cross Axis)
+O cross axis é o eixo perpendicular ao main axis. Sua direção é sempre oposta à direção do main axis.
+
+Comportamento do Cross Axis:
+Quando flex-direction é row ou row-reverse, o cross axis é vertical.
+Quando flex-direction é column ou column-reverse, o cross axis é horizontal.
