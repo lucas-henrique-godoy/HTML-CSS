@@ -572,3 +572,28 @@ Quando flex-direction é column (ou column-reverse):
 
 Cross Start: Esquerda.
 Cross End: Direita.
+_______________________________________________________________________________________________________________________________________________________________________
+*O encolhimento dos itens de um flexbox vai depender da capacidade de encolhimento dele. Depende do conteúdo, por exemplo: se for um texto com palavras muito grandes ele vai ficar do tamanho da palavra mais longa. Se não der, ai ele quebra. Ou seja, o tamanho de um bloco vai depender muito do conteúdo que existe nele.
+_______________________________________________________________________________________________________________________________________________________________________
+Flex-wrap: nowrap - Não quebra, faz com que os blocos não saiam da sequência.(valor padrão, se não colocar nada ele fica esse).
+_______________________________________________________________________________________________________________________________________________________________________
+flex-wrap é uma propriedade do CSS utilizada em layouts flexíveis (Flexbox) para controlar o comportamento de quebra de linhas dos itens dentro de um contêiner flexível. Ela determina se os itens devem ser dispostos em uma única linha ou se podem ser quebrados para múltiplas linhas conforme necessário.
+
+Valores Possíveis:
+flex-wrap: nowrap;
+
+Este é o valor padrão. Significa "não quebrar". Os itens tentarão se ajustar em uma única linha, mesmo que isso signifique que eles serão comprimidos além do espaço disponível horizontalmente.
+flex-wrap: wrap;
+
+Com este valor, os itens são dispostos em múltiplas linhas se necessário. Isso permite que os itens sejam organizados verticalmente quando não houver mais espaço horizontal disponível.
+flex-wrap: wrap-reverse;
+
+Este valor também permite que os itens sejam organizados em múltiplas linhas, mas a ordem das linhas é invertida. Ou seja, a primeira linha se torna a última e a última se torna a primeira.
+Benefícios e Aplicações:
+Responsividade: flex-wrap é frequentemente utilizado em designs responsivos para garantir que os itens se ajustem automaticamente ao tamanho da tela, organizando-se em colunas quando a largura do contêiner é reduzida.
+
+Controle de Layout: Permite maior controle sobre como os itens são organizados, especialmente em layouts onde o número de itens pode variar dinamicamente.
+
+Ajuste de Espaço: Ajuda a evitar a compressão excessiva de itens quando não há espaço suficiente para acomodá-los em uma única linha.
+
+Em resumo, flex-wrap é uma ferramenta poderosa para ajustar o comportamento de layout de itens em um contêiner flexível, proporcionando flexibilidade e controle sobre como os elementos são distribuídos ao longo do eixo principal (normalmente horizontal) do layout flexível.
