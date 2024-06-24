@@ -531,29 +531,44 @@ Flexbox oferece uma maneira poderosa e intuitiva de criar layouts responsivos e 
 
 *OBS: A propriedade diplay:flex; somente é colocada no flex-contêiner(elemento pai), e nunca nos flex-items(elementos filhos).
 _______________________________________________________________________________________________________________________________________________________________________
+Explicações Simplificadas Minhas:
 
-1. Eixo Principal (Main Axis)
-O main axis é o eixo ao longo do qual os itens flexíveis são dispostos dentro do container flexível. A direção do main axis é determinada pela propriedade flex-direction.
+*Na configuração de flex-direction: row; - O eixo main-axis é sempre na horizontal da esquerda para a direita. O eixo cross-axis é na vertical sempre de cima para baixo considerando o nosso idioma(nós lemos da esquerda para a direita).
 
-Para flex-direction: row; (padrão):
+*Na configuração de flex-direction: row-reverse; - O eixo main-axis é sempre na horizontal da direita para a esquerda. O eixo cross-axis é na vertical de cima para baixo(não muda é igualo ao row).
 
-Main Axis: Horizontal da esquerda para a direita.
-Cross Axis: Vertical de cima para baixo.
-Para flex-direction: row-reverse;:
+*Na configuração de flex-direction: column; -O eixo main-axis é na vertical de cima para baixo.  O eixo cross-axis é na horizontal da esquerda para a direita.
 
-Main Axis: Horizontal da direita para a esquerda.
-Cross Axis: Vertical de cima para baixo.
-Para flex-direction: column;:
+*Na configuração de flex-direction: column-reverse; -O eixo main-axis é na vertical de baixo para cima. O eixo cross-axis é na horizontal da esquerda para a direita.
+_______________________________________________________________________________________________________________________________________________________________________ 
 
-Main Axis: Vertical de cima para baixo.
-Cross Axis: Horizontal da esquerda para a direita.
-Para flex-direction: column-reverse;:
+*OBS:  Os itens são sempre colocados no mesmo sentido do maix-axis.
 
-Main Axis: Vertical de baixo para cima.
-Cross Axis: Horizontal da esquerda para a direita.
-2. Eixo Transversal (Cross Axis)
-O cross axis é o eixo perpendicular ao main axis. Sua direção é sempre oposta à direção do main axis.
+**No contexto do Flexbox em CSS, além dos conceitos de main axis e cross axis, existem também os conceitos de main start, main end, cross start e cross end. Esses termos são utilizados para descrever o alinhamento e posicionamento dos itens dentro de um container flexível, dependendo da direção estabelecida pelo flex-direction.
 
-Comportamento do Cross Axis:
-Quando flex-direction é row ou row-reverse, o cross axis é vertical.
-Quando flex-direction é column ou column-reverse, o cross axis é horizontal.
+1. Main Start e Main End
+Main Start: É o ponto de partida ao longo do main axis onde os itens começam a ser posicionados.
+Main End: É o ponto de término ao longo do main axis onde os itens terminam de ser posicionados.
+Esses conceitos são diretamente influenciados pela direção estabelecida pelo flex-direction.
+
+Quando flex-direction é row (ou row-reverse):
+
+Main Start: Esquerda (para row) ou direita (para row-reverse).
+Main End: Direita (para row) ou esquerda (para row-reverse).
+Quando flex-direction é column (ou column-reverse):
+
+Main Start: Topo (para column) ou baixo (para column-reverse).
+Main End: Baixo (para column) ou topo (para column-reverse).
+2. Cross Start e Cross End
+Cross Start: É o ponto de partida ao longo do cross axis onde os itens começam a ser posicionados.
+Cross End: É o ponto de término ao longo do cross axis onde os itens terminam de ser posicionados.
+Esses conceitos dependem do flex-direction aplicado:
+
+Quando flex-direction é row (ou row-reverse):
+
+Cross Start: Topo.
+Cross End: Base.
+Quando flex-direction é column (ou column-reverse):
+
+Cross Start: Esquerda.
+Cross End: Direita.
