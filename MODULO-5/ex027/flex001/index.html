@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flexible Box</title>
+    <style>
+        /* Estilos CSS internos para a página */
+        /* Estilizando o contêiner flex */
+        div.container {
+            background-color: lightsalmon; /* Cor de fundo do contêiner */
+            display: flex; /* Torna o contêiner um contêiner flexível */
+        }
+
+        /* Estilizando os itens dentro do contêiner flex */
+        div.item {
+            background-color: lightblue; /* Cor de fundo dos itens */
+            border: 1px solid black; /* Borda preta com 1px de espessura */
+            text-align: center; /* Centraliza o texto dentro do item */
+            flex: auto; /* Define que os itens devem crescer igualmente para ocupar o espaço disponível */
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Corpo do documento HTML -->
+    <!-- Contêiner flex onde os itens serão organizados -->
+    <div class="container">
+        <!-- Itens flexíveis dentro do contêiner -->
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
 </body>
 </html>
