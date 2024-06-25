@@ -5,24 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
-        
+        /* Estilos CSS para o exemplo de layout flexível */
+
+        /* Estiliza o contêiner flexível */
         div.container {
-            background-color: lightsalmon;
-            height: 100px; 
-            display: flex; 
-            flex-flow: column wrap;
+            background-color: lightsalmon; /* Cor de fundo do contêiner */
+            height: 100px; /* Altura do contêiner */
+            display: flex; /* Define o contêiner como um contêiner flexível */
+            flex-flow: column wrap; /* Define o fluxo dos itens como coluna com quebra automática */
         }
        
+        /* Estiliza os itens dentro do contêiner */
         div.item {
-            background-color: lightblue; 
-            border: 1px solid black; 
-            text-align: center;
-            flex: auto; 
+            background-color: lightblue; /* Cor de fundo dos itens */
+            border: 1px solid black; /* Borda dos itens */
+            text-align: center; /* Alinhamento do texto dentro dos itens */
+            flex: auto; /* Permite que os itens cresçam automaticamente para ocupar o espaço disponível */
         }
     </style>
 </head>
 <body>
     <!-- Corpo do documento HTML -->
+
     <!-- Contêiner flex onde os itens serão organizados -->
     <div class="container">
         <!-- Itens flexíveis dentro do contêiner -->
@@ -34,5 +38,6 @@
         <div class="item">Exemplo de bloco F</div>
         <div class="item">Exemplo de bloco G</div>
     </div>
+
 </body>
 </html>
