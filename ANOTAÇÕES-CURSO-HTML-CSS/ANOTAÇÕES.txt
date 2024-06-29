@@ -597,3 +597,32 @@ Controle de Layout: Permite maior controle sobre como os itens são organizados,
 Ajuste de Espaço: Ajuda a evitar a compressão excessiva de itens quando não há espaço suficiente para acomodá-los em uma única linha.
 
 Em resumo, flex-wrap é uma ferramenta poderosa para ajustar o comportamento de layout de itens em um contêiner flexível, proporcionando flexibilidade e controle sobre como os elementos são distribuídos ao longo do eixo principal (normalmente horizontal) do layout flexível.
+_______________________________________________________________________________________________________________________________________________________________________
+IDENIFICANDOS OS EIXOS:
+
+Para identificar mais facilmente o main-axis e o cross-axis no flexbox, você pode seguir estas diretrizes simples:
+
+Entenda a direção principal (main axis):
+
+A direção principal é determinada pela propriedade flex-direction.
+Se flex-direction for row ou row-reverse, o main-axis será horizontal, da esquerda para a direita.
+Se flex-direction for column ou column-reverse, o main-axis será vertical, de cima para baixo.
+Identifique o cross-axis:
+
+O cross-axis é perpendicular ao main-axis.
+Se o main-axis for horizontal (row ou row-reverse), o cross-axis será vertical.
+Se o main-axis for vertical (column ou column-reverse), o cross-axis será horizontal.
+Utilize cores ou bordas para diferenciação:
+
+Para uma identificação visual rápida, você pode atribuir cores diferentes aos elementos flexíveis ou aplicar bordas distintas em cada eixo.
+Por exemplo, aplicar uma borda verde ao main-axis e uma borda vermelha ao cross-axis pode tornar mais claro visualmente qual é qual.
+Visualize com propriedades visuais:
+
+Use propriedades como justify-content e align-items para entender como os elementos estão sendo alinhados ao longo do main-axis e cross-axis.
+Por exemplo, se você usa justify-content: center;, os itens são centralizados ao longo do main-axis.
+Pratique com exemplos simples:
+
+Criar layouts simples com flexbox e experimentar diferentes valores de flex-direction, justify-content e align-items pode ajudar a internalizar a relação entre main-axis e cross-axis.
+Ao combinar essas técnicas, você deve conseguir identificar facilmente o main-axis e o cross-axis em qualquer layout flexbox._______________________________________________________________________________________________________________________________________________________________________
+
+Justify-content: Alinha os itens dentro de um contêiner em relação ao eixo principal(main-axis). Se o flex-flow for do tipo column ele alinha na vertical, se for flex-flow do tipo row ele alinha na horizontal.
