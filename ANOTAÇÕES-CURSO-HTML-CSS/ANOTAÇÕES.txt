@@ -624,5 +624,40 @@ Pratique com exemplos simples:
 
 Criar layouts simples com flexbox e experimentar diferentes valores de flex-direction, justify-content e align-items pode ajudar a internalizar a relação entre main-axis e cross-axis.
 Ao combinar essas técnicas, você deve conseguir identificar facilmente o main-axis e o cross-axis em qualquer layout flexbox._______________________________________________________________________________________________________________________________________________________________________
+EXEMPLOS PARA FLEX-FLOW ROW
+- Justify-content: Alinha os itens dentro de um contêiner em relação ao eixo principal(main-axis). Se o flex-flow for do tipo column ele alinha na vertical, se for flex-flow do tipo row ele alinha na horizontal.
 
-Justify-content: Alinha os itens dentro de um contêiner em relação ao eixo principal(main-axis). Se o flex-flow for do tipo column ele alinha na vertical, se for flex-flow do tipo row ele alinha na horizontal.
+- Justify-content: flex-start: o 1º item vai ficar grudado do main-start e os demais vão ficar grudados nele, e o espaço em branco vai ser jogado pro final do eixo principal(main-axis).
+
+- Justify-content: flex-end: O último item vai ser grudado no main-end e o espaço em branco vai ficar no inicio do eixo principal(main-axis).
+
+- Justify-content: center: Calcula exatamente o centro do contêiner, coloca todos os itens juntos nesse center e os espaços vão ser distribuídos de forma igual no main-start  no main-end.
+
+-Justify-content: space-between: Coloca o 1º item no main-start e o último item no main-end. Todos os outros itens vão ficar no meio e com espaçamento entre eles igual.
+
+-Justify-content: space-evenly: Não vai grudar o 1º e o último elemento nas extremidades do contêiner. Ele vai colocar os elementos dispostos dentro do contêiner, de forma que , antes e depois dos itens (inclusive antes do primeiro e depois do ultimo) nós tenhamos espaçamentos iguais.
+
+-Justify-content: space-around: Pega o espaço útil do contêiner, divide esses espaços de acordo com a quantidades de itens que tem dentro do contêiner em partes iguais , e centraliza os itens dentro desses espaços. 
+_______________________________________________________________________________________________________________________________________________________________________
+Justify-content com flex-flow: column;
+justify-content: flex-start;
+
+Alinha os itens ao início do contêiner ao longo do eixo principal (verticalmente no caso de flex-flow: column;).
+O primeiro item fica grudado no início do eixo principal e os demais itens seguem em sequência abaixo dele. O espaço restante é colocado no final do eixo principal.
+justify-content: flex-end;
+
+Alinha os itens ao final do contêiner ao longo do eixo principal (verticalmente no caso de flex-flow: column;).
+O último item fica grudado no final do eixo principal. O espaço restante é colocado no início do eixo principal.
+justify-content: center;
+
+Centraliza os itens ao longo do eixo principal do contêiner (verticalmente no caso de flex-flow: column;).
+Calcula o centro exato do contêiner e posiciona todos os itens juntos nesse centro, distribuindo igualmente os espaços no início e no final do eixo principal.
+justify-content: space-between;
+
+Coloca o primeiro item no início do eixo principal e o último item no final do eixo principal. Todos os outros itens são distribuídos igualmente no espaço restante entre eles.
+justify-content: space-evenly;
+
+Distribui os itens uniformemente ao longo do eixo principal do contêiner (verticalmente no caso de flex-flow: column;), incluindo espaços iguais antes do primeiro item e depois do último item.
+justify-content: space-around;
+
+Divide o espaço disponível no contêiner igualmente entre os itens, distribuindo o espaço ao redor de cada item de maneira uniforme.
