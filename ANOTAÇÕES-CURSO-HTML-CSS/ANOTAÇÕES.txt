@@ -663,7 +663,7 @@ Calcula o centro exato do contêiner e posiciona todos os itens juntos nesse cen
 -Justify-content: space-around: Divide o espaço disponível no contêiner igualmente entre os itens, distribuindo o espaço ao redor de cada item de maneira uniforme.
 _______________________________________________________________________________________________________________________________________________________________________
 
-ALINHAMENTOS PARA EIXO TRANSVERSAL - CROSS-AXIS
+ALINHAMENTOS PARA EIXO TRANSVERSAL - CROSS-AXIS - 
 
 EXEMPLOS PARA FLEX-FLOW ROW E ROW-REVERSE
 
@@ -683,14 +683,16 @@ align-items: baseline;: Alinha os itens pela linha de base de seu conteúdo. A l
 align-items: stretch;: Estica os itens para ocupar todo o espaço disponível no cross-axis. Os itens serão esticados verticalmente para corresponder à altura do contêiner flexível.
 
 2. FLEX-FLOW ROW-REVERSE
-Com flex-flow: row-reverse;, os itens são dispostos em uma linha horizontal da direita para a esquerda. O cross-axis continua sendo o eixo vertical.
+Com flex-flow: row-reverse: Os itens são dispostos em uma linha horizontal da direita para a esquerda. O cross-axis continua sendo o eixo vertical.
 
-align-items: flex-start;: Alinha os itens ao início do cross-axis. Os itens serão alinhados na parte superior do contêiner, ocupando o mínimo de altura possível.
+align-items: flex-start: Alinha os itens ao início do cross-axis. Os itens serão alinhados na parte superior do contêiner, ocupando o mínimo de altura possível.
 
-align-items: flex-end;: Alinha os itens ao final do cross-axis. Os itens serão alinhados na parte inferior do contêiner, ocupando o mínimo de altura possível.
+align-items: flex-end: Alinha os itens ao final do cross-axis. Os itens serão alinhados na parte inferior do contêiner, ocupando o mínimo de altura possível.
 
-align-items: center;: Centraliza os itens verticalmente no cross-axis. Os itens serão centralizados verticalmente dentro do contêiner flexível.
+align-items: center: Centraliza os itens verticalmente no cross-axis. Os itens serão centralizados verticalmente dentro do contêiner flexível.
 
-align-items: baseline;: Alinha os itens pela linha de base de seu conteúdo. A linha de base é a linha imaginária onde a maioria dos caracteres se senta.
+align-items: baseline: Alinha os itens pela linha de base de seu conteúdo. A linha de base é a linha imaginária onde a maioria dos caracteres se senta.
 
-align-items: stretch;: Estica os itens para ocupar todo o espaço disponível no cross-axis. Os itens serão esticados verticalmente para corresponder à altura do contêiner flexível.
+align-items: stretch(é o padrão): Estica os itens para ocupar todo o espaço disponível no cross-axis. Os itens serão esticados verticalmente para corresponder à altura do contêiner flexível.
+
+*OBS: Para alinhar no cross-axis deve-se aumentar a altura do contêiner.
