@@ -699,3 +699,5 @@ align-items: stretch(é o padrão): Estica os itens para ocupar todo o espaço d
 _______________________________________________________________________________________________________________________________________________________________________**Para centralizar um item dentro de um container é só utilizar no elemento pai(container ) essas propriedades:
 -jutify-content: center;
 - align-items: center;
+
+**Os itens ficam sempre centralizados independente do tamanho ou formato do contêiner(responsivo).
