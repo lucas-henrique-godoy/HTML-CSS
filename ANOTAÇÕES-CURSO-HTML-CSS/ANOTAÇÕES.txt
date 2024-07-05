@@ -696,3 +696,6 @@ align-items: baseline: Alinha os itens pela linha de base de seu conteúdo. A li
 align-items: stretch(é o padrão): Estica os itens para ocupar todo o espaço disponível no cross-axis. Os itens serão esticados verticalmente para corresponder à altura do contêiner flexível.
 
 *OBS: Para alinhar no cross-axis deve-se aumentar a altura do contêiner.
+_______________________________________________________________________________________________________________________________________________________________________**Para centralizar um item dentro de um container é só utilizar no elemento pai(container ) essas propriedades:
+-jutify-content: center;
+- align-items: center;
