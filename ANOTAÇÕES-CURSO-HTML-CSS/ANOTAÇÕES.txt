@@ -701,3 +701,48 @@ ________________________________________________________________________________
 - align-items: center;
 
 **Os itens ficam sempre centralizados independente do tamanho ou formato do contêiner(responsivo).
+_______________________________________________________________________________________________________________________________________________________________________
+
+- JUSTIF-COTENT: Vai alinhar o conteúdo/itens dentro do eixo principal
+- ALGN-ITEMS: Vai alinhar o  conteúdo/itens dentro do eixo transversal.
+- ALIGN-CONTENT: Alinha os elementos no eixo transversal, mas quando eles estão empacotados.
+_______________________________________________________________________________________________________________________________________________________________________
+
+-ALIGN-CONTENT: Em Flexbox, a propriedade align-content controla o alinhamento dos itens flexíveis ao longo do eixo transversal (eixo perpendicular ao eixo principal do contêiner flexível) quando há espaço extra no contêiner flexível. Esta propriedade é útil principalmente quando há várias linhas de itens dentro do contêiner flexível.
+
+Funcionamento da align-content
+A align-content só tem efeito quando há espaço extra no eixo transversal do contêiner flexível, o que geralmente ocorre quando:
+
+Os itens flexíveis dentro do contêiner flexível não ocupam todo o espaço disponível.
+Há mais de uma linha de itens flexíveis no contêiner.
+Valores da align-content
+flex-start: Alinha as linhas de itens ao início do contêiner flexível.
+
+flex-end: Alinha as linhas de itens ao final do contêiner flexível.
+
+center: Alinha as linhas de itens ao centro do contêiner flexível.
+
+space-between: Distribui uniformemente as linhas de itens ao longo do eixo transversal, deixando espaços iguais entre as linhas. A primeira linha está alinhada ao início e a última linha ao final do contêiner.
+
+space-around: Distribui uniformemente as linhas de itens ao longo do eixo transversal, deixando espaços iguais ao redor de cada linha. O espaço entre as linhas é o dobro do espaço antes da primeira e depois da última linha.
+
+stretch: Preenche o contêiner flexível, esticando as linhas de itens para ocupar todo o espaço disponível. Este é o comportamento padrão se align-content não for especificado.
+
+space-evenly: Distribui uniformemente as linhas de itens ao longo do eixo transversal, incluindo o espaço antes da primeira linha e depois da última linha.
+
+Exemplo de Uso
+Considere o seguinte exemplo:
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens flexíveis quebrem em várias linhas */
+  height: 300px;   /* Altura do contêiner */
+  align-content: space-between; /* Alinha as linhas com espaçamento igual entre elas */
+}
+Neste exemplo, se os itens flexíveis não ocuparem toda a altura do contêiner (300px), a propriedade align-content: space-between; distribuirá o espaço extra igualmente entre as linhas de itens.
+
+Considerações Finais
+A align-content afeta apenas o layout quando há espaço extra no eixo transversal do contêiner flexível.
+É mais relevante quando há mais de uma linha de itens flexíveis no contêiner, como em layouts responsivos ou quando os itens flexíveis têm alturas diferentes.
+Ao usar Flexbox, entender e usar corretamente align-content pode ajudar a controlar o alinhamento e o espaçamento dos itens flexíveis dentro do seu layout de maneira eficaz e responsiva.
+
