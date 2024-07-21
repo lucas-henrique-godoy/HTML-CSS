@@ -9,7 +9,11 @@
         /* Estilizando o contêiner flex */
         div.container {
             background-color: lightsalmon; /* Cor de fundo do contêiner */
+            
             display: flex; /* Torna o contêiner um contêiner flexível */
+            flex-flow: row wrap;
+            align-content: space-around;
+            height: 400px;
         }
 
         /* Estilizando os itens dentro do contêiner flex */
@@ -17,7 +21,7 @@
             background-color: lightblue; /* Cor de fundo dos itens */
             border: 1px solid black; /* Borda preta com 1px de espessura */
             text-align: center; /* Centraliza o texto dentro do item */
-            flex: auto; /* Define que os itens devem crescer igualmente para ocupar o espaço disponível */
+            padding: 40px;
         }
     </style>
 </head>
@@ -33,6 +37,12 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
     </div>
 </body>
 </html>

@@ -708,7 +708,7 @@ ________________________________________________________________________________
 - ALIGN-CONTENT: Alinha os elementos no eixo transversal, mas quando eles estão empacotados.
 _______________________________________________________________________________________________________________________________________________________________________
 
--ALIGN-CONTENT: Em Flexbox, a propriedade align-content controla o alinhamento dos itens flexíveis ao longo do eixo transversal (eixo perpendicular ao eixo principal do contêiner flexível) quando há espaço extra no contêiner flexível. Esta propriedade é útil principalmente quando há várias linhas de itens dentro do contêiner flexível.
+-ALIGN-CONTENT: Em Flexbox, a propriedade align-content controla o alinhamento dos itens flexíveis ao longo do eixo transversal (eixo perpendicular ao eixo principal do contêiner flexível) quando há espaço extra no contêiner flexível. Esta propriedade é útil principalmente quando há várias linhas de itens dentro do contêiner flexível. Utiizado no container quando o flex-flow é wrap ou wrap-reverse.
 
 Funcionamento da align-content
 A align-content só tem efeito quando há espaço extra no eixo transversal do contêiner flexível, o que geralmente ocorre quando:
